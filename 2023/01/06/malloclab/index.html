@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo.png"/>
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Kevin's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kevin's blog" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">KEVIN</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%9A%8F%E7%AC%94/">论文随笔</a></li><li><a class="category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/">课程报告</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/homepage/" title="学术主页">
+		                学术主页
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Kevin-thu" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="twitter" href="https://twitter.com/sze68zkw" target="_blank" rel="noopener">
+                            <i class="icon fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://static.sitestack.cn/projects/CSAPP-3e-Solutions/assets/csapp3e-cover.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >ICS Lab3 Malloc Report</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="ICS-Lab3-Malloc-lab实验报告"><a href="#ICS-Lab3-Malloc-lab实验报告" class="headerlink" title="ICS Lab3 Malloc lab实验报告"></a>ICS Lab3 Malloc lab实验报告</h1><blockquote>
+<p>张凯文 2021010729 计12班 2023年1月15日</p>
+</blockquote>
+<h2 id="基础：隐式空闲链表"><a href="#基础：隐式空闲链表" class="headerlink" title="基础：隐式空闲链表"></a>基础：隐式空闲链表</h2><p>隐式空闲链表通过在每个块的头部、脚部各 8 个字节记录块的大小、分配信息维护堆的结构。它通过读取块的大小找到相邻块的位置，因此称为隐式链表。其具体实现在课本上有详细介绍，因此在此只阐述基本思路。</p>
+<h3 id="mm-init"><a href="#mm-init" class="headerlink" title="mm_init"></a><code>mm_init</code></h3><p>首先为序言块（ size &#x3D; 16 字节，头部脚部各 8 字节，标记已分配 ）和结尾块（ 通过将 size 设为 0 标记结尾，已分配 ）分配空间，记录堆空间起始位置，然后首次扩展堆空间得到一个空闲块。</p>
+<h3 id="mm-malloc"><a href="#mm-malloc" class="headerlink" title="mm_malloc"></a><code>mm_malloc</code></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> *<span class="title">mm_malloc</span><span class="params">(<span class="type">size_t</span> size)</span> </span>&#123;</span><br><span class="line">  <span class="type">size_t</span> asize;</span><br><span class="line">  <span class="type">char</span> *bp;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>(size == <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span>(size &lt;= DSIZE)</span><br><span class="line">      asize = <span class="number">2</span> * DSIZE;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">      asize = <span class="built_in">ALIGN</span>(size + DSIZE);</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span>((bp = <span class="built_in">find_fit</span>(asize)) != <span class="literal">NULL</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">place</span>(bp, asize);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="type">size_t</span> extendsize = <span class="built_in">MAX</span>(asize, CHUNKSIZE);</span><br><span class="line">  <span class="keyword">if</span>((bp = <span class="built_in">extend_heap</span>(extendsize / WSIZE)) == <span class="literal">NULL</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">place</span>(bp, asize);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>各个版本的 <code>mm_malloc</code> 实现代码相同：首先根据最小块和 16 字节对齐的要求对 size 进行预处理，然后尝试在已分配的堆空间中寻找合适大小的块（<code>find_fit</code>），如果不能找到则扩展堆空间（<code>extend_heap</code>），在相应位置分配内存（<code>place</code>）。不同版本的实现，只需要更改 <code>find_fit</code> 和 <code>place</code> 函数即可。</p>
+<p>对于隐式空闲链表的 <code>find_fit</code> 函数，可以采用首次适配（<code>first_fit</code>）、下一次适配（<code>next_fit</code>)、最优适配（<code>best_fit</code>）等方案，在此我实现了前两种：</p>
+<ul>
+<li><code>first_fit</code>：每次从堆空间起始位置出发，找到第一个大小充足的空闲块即返回；</li>
+<li><code>next_fit</code>：维护一个全局变量 <code>last_fit</code> 记录上一次找到的空闲块位置，下一次寻找从该位置出发遍历堆空间，寻找合适的空闲块。基于 <code>next_fit</code> 实现时，需要注意合并空闲块后要保证 <code>last_fit</code> 不会指向刚刚被合并、已不存在的空闲块。</li>
+</ul>
+<h3 id="mm-free"><a href="#mm-free" class="headerlink" title="mm_free"></a><code>mm_free</code></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">mm_free</span><span class="params">(<span class="type">void</span> *ptr)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(ptr == <span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">  <span class="type">size_t</span> size = <span class="built_in">GET_SIZE</span>(<span class="built_in">HDRP</span>(ptr));</span><br><span class="line">  <span class="built_in">PUT</span>(<span class="built_in">HDRP</span>(ptr), <span class="built_in">PACK</span>(size, <span class="number">0</span>));</span><br><span class="line">  <span class="built_in">PUT</span>(<span class="built_in">FTRP</span>(ptr), <span class="built_in">PACK</span>(size, <span class="number">0</span>));</span><br><span class="line">  <span class="built_in">coalesce</span>(ptr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>各个版本的 <code>mm_free</code> 实现代码也相同，将相应块设为未分配，然后合并相邻空闲块即可。</p>
+<p>基于 <code>mm_malloc</code> 和 <code>mm_free</code> 可以实现 <code>mm_realloc</code> 的 naive 版本，基于此实现的基础版本可以通过正确性评测：</p>
+<p><img src="https://img2.imgtp.com/2024/01/23/kclUmWmR.png"></p>
+<p>但是，由于每次分配空间时都可能遍历整个堆空间，时间复杂度与块总量（包括已分配块和空闲块）线性正比，吞吐量非常低，因此需要改进。</p>
+<h2 id="改进：分离式空闲链表"><a href="#改进：分离式空闲链表" class="headerlink" title="改进：分离式空闲链表"></a>改进：分离式空闲链表</h2><p>与隐式空闲链表不同，显式空闲链表显式记录每个空闲块的前驱、后继空闲块，因此在搜索空闲块时时间复杂度只与空闲块数量线性正比。</p>
+<p>在此基础上，将各个空闲块根据大小再划分为若干等价类，每个等价类独立构成一个链表，就得到了分离式空闲链表。由于事先进行了大小划分，每次寻找一定大小的空闲块时都会从大小相近的空闲块开始寻找，因此对分离式空闲链表进行简单的 first_fit 搜索时，效果与对普通隐式空闲链表或显式空闲链表进行 best_fit 的效果相当，在空间利用率上也会得到显著提升。</p>
+<p>下图展示了两类链表中空闲块结构的对比：</p>
+<p><img src="https://img2.imgtp.com/2024/01/23/iMnc4fE7.jpg"></p>
+<p>在原本隐式空闲链表实现的基础上，需要额外维护分离式空闲链表的结构：</p>
+<h3 id="mm-init-1"><a href="#mm-init-1" class="headerlink" title="mm_init"></a><code>mm_init</code></h3><p>在序言块之前分配一块空间存放空闲链表表头，记录各链表第一个空闲块的地址（表为空则为 0）。</p>
+<h3 id="freelist-header"><a href="#freelist-header" class="headerlink" title="freelist_header"></a><code>freelist_header</code></h3><p>根据给定块大小确定表头。链表的数量 <code>LISTSIZE</code> 是一个超参数，理论上来说在一定限度内划分越细致（<code>LISTSIZE</code>越大）效果越好，但由于最大块大小有限，实践中设为 13 ~ 19 得分相差不大，在此设为 15，即根据块大小（单位：字节，最小块 $4 \times 8 &#x3D; 32$ 字节）划分为 15 个等价类：<br>$$ [32], \ (32, 64],\ (64,128], \ldots , (2^{17}, 2^{18}],\ (2^{18}, +\infin) $$<br>根据块大小找到相应等价类即可。</p>
+<h3 id="insert-to-freelist"><a href="#insert-to-freelist" class="headerlink" title="insert_to_freelist"></a><code>insert_to_freelist</code></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">insert_to_freelist</span><span class="params">(<span class="type">void</span> *bp)</span> </span>&#123;</span><br><span class="line">  <span class="type">size_t</span> size = <span class="built_in">GET_SIZE</span>(<span class="built_in">HDRP</span>(bp));</span><br><span class="line">  <span class="type">void</span> *header = <span class="built_in">freelist_header</span>(size);</span><br><span class="line">  <span class="type">void</span> *first = <span class="built_in">GET_HEAD</span>(header);</span><br><span class="line">  <span class="built_in">PUT_PRED</span>(bp, <span class="number">0</span>);</span><br><span class="line">  <span class="built_in">PUT_SUCC</span>(bp, first);</span><br><span class="line">  <span class="keyword">if</span>(first) <span class="built_in">PUT_PRED</span>(first, bp);</span><br><span class="line">  <span class="built_in">PUT_HEAD</span>(header, bp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>将指定块插入空闲链表。在此使用最简单的表头插入方法，在 $O(1)$ 时间内调整表头处拓扑结构，将空闲块插入在链表头即可。</p>
+<h3 id="remove-from-freelist"><a href="#remove-from-freelist" class="headerlink" title="remove_from_freelist"></a><code>remove_from_freelist</code></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">remove_from_freelist</span><span class="params">(<span class="type">void</span> *bp)</span> </span>&#123;</span><br><span class="line">  <span class="type">void</span> *pred = <span class="built_in">GET_PRED</span>(bp), *succ = <span class="built_in">GET_SUCC</span>(bp);</span><br><span class="line">  <span class="comment">/* bp在表头 */</span></span><br><span class="line">  <span class="keyword">if</span>(!pred) &#123;</span><br><span class="line">    <span class="type">size_t</span> size = <span class="built_in">GET_SIZE</span>(<span class="built_in">HDRP</span>(bp));</span><br><span class="line">    <span class="type">void</span> *header = <span class="built_in">freelist_header</span>(size);</span><br><span class="line">    <span class="built_in">PUT_HEAD</span>(header, succ);</span><br><span class="line">    <span class="keyword">if</span>(succ) <span class="built_in">PUT_PRED</span>(succ, <span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* bp不在表头 */</span></span><br><span class="line">  <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">PUT_SUCC</span>(pred, succ);</span><br><span class="line">    <span class="keyword">if</span>(succ) <span class="built_in">PUT_PRED</span>(succ, pred);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">PUT_PRED</span>(bp, <span class="number">0</span>);</span><br><span class="line">  <span class="built_in">PUT_SUCC</span>(bp, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调整局部拓扑结构，将指定块从空闲链表中删除。</p>
+<h3 id="segregate-fit"><a href="#segregate-fit" class="headerlink" title="segregate_fit"></a><code>segregate_fit</code></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> *<span class="title">segregate_fit</span><span class="params">(<span class="type">size_t</span> size)</span> </span>&#123;</span><br><span class="line">  <span class="type">char</span> *header;</span><br><span class="line">  <span class="type">char</span> *bp;</span><br><span class="line">  <span class="keyword">for</span>(header = <span class="built_in">freelist_header</span>(size); header != freelistp + LISTSIZE * WSIZE; header += WSIZE) &#123;</span><br><span class="line">    <span class="keyword">for</span>(bp = <span class="built_in">GET_HEAD</span>(header); bp; bp = <span class="built_in">GET_SUCC</span>(bp)) &#123;</span><br><span class="line">      <span class="keyword">if</span>(<span class="built_in">GET_SIZE</span>(<span class="built_in">HDRP</span>(bp)) &gt;= size)</span><br><span class="line">        <span class="keyword">return</span> bp;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>分离式空闲链表的 <code>find_fit</code> 方法。根据指定大小找到相应等价类链表表头，从该链表开始搜索大小充足的块，若该链表中没有则继续到大小更大的等价类链表中搜索，找到第一个合适的块即返回。</p>
+<p>此外，还需要修改 <code>coalesce</code> 和 <code>place</code> 等函数，将被合并的空闲块从链表中删除，将新产生的空闲块插入空闲链表，正确维护好空闲链表结构即可。基于分离式空闲链表的内存分配器吞吐量有了巨大提升，但 <code>mm_realloc</code> 函数性能仍然受限，因此还需要重写 <code>mm_realloc</code> 函数。</p>
+<h2 id="改进：重写mm-realloc函数"><a href="#改进：重写mm-realloc函数" class="headerlink" title="改进：重写mm_realloc函数"></a>改进：重写mm_realloc函数</h2><p>改进的基本思想是：每次通过 <code>mm_malloc</code> 函数重新分配需要花费大量时间寻找合适空闲块，但假如 <code>newsize</code> 本来就比 <code>oldsize</code> 小，或者在附近就有空闲块能给出足够的空间，那么就在原空间附近重新分配即可，还可以减少碎片情况。实在不行，才调用 <code>mm_malloc</code> 函数重新分配空间。</p>
+<p>具体处理可参见如下见示意图：</p>
+<p><img src="https://img2.imgtp.com/2024/01/23/cPZ579U5.png"></p>
+<p>如此改进后，<code>realloc</code> 测试点的吞吐量也得以提升，在调整 <code>CHUNKSIZE</code> 到合适大小后，得分可以提高到 90 分以上：</p>
+<p><img src="https://img2.imgtp.com/2024/01/23/A7Xhld4U.png"></p>
+<h2 id="优化trick"><a href="#优化trick" class="headerlink" title="优化trick"></a>优化trick</h2><p>可以发现，当前实现虽然对大部分测试点空间利用率不错，但 8、9 号测试点却只有 50% 左右。通过 gdb 调试可以发现，这两个测试点都是大小块间隔分配（连续相继分配 size &#x3D; 64、448 &#x2F; 16、112 的块），这样内部大小块相继分布，释放小块后会出现大量不连续的小块空间难以再利用，造成大量碎片现象。对此，我们可以在 <code>place</code> 函数分割空闲块时，遇大块则放在后面，遇小块则放在前面，从而实现每个 <code>CHUNK</code> 中大小块连续存放，在释放之后也能得到连续的空间。</p>
+<p>具体而言，只需要略微修改 <code>place</code> 函数，当分配块的 size 大于 96（配合 <code>CHUNKISZE</code> &#x3D; 4096 &#x2F; 8192，综合两个测试点的数据情况，在实践中效果较好） 时，分割空闲块后将分配块放在后面即可。这样做之后，总得分能提升到 94：</p>
+<p><img src="https://img2.imgtp.com/2024/01/23/K0K80TUE.png"></p>
+<p>不过，这样做之后会发现 11 号测试点空间利用率下降明显，这是由于该测试点反复在与末尾间隔一个小分配块的地方重分配一个较大块，在 <code>CHUNKSIZE</code> 设置较大时会在结尾处出现大块尾部碎片。对此可能可以通过针对性地调整 realloc 策略（如对特定大小块放置到结尾空闲空间）优化，但限于时间原因没有继续实现，未来有空可以继续尝试。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2023/01/06/malloclab/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2023/01/06/malloclab/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

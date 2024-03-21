@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo.png"/>
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Kevin's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kevin's blog" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">KEVIN</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%9A%8F%E7%AC%94/">论文随笔</a></li><li><a class="category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/">课程报告</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/homepage/" title="学术主页">
+		                学术主页
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Kevin-thu" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="twitter" href="https://twitter.com/sze68zkw" target="_blank" rel="noopener">
+                            <i class="icon fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >DSA PA3 Report</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="DSA-PA3-Report"><a href="#DSA-PA3-Report" class="headerlink" title="DSA PA3 Report"></a>DSA PA3 Report</h1><h2 id="PA3-1-Build解题报告"><a href="#PA3-1-Build解题报告" class="headerlink" title="PA3-1 Build解题报告"></a>PA3-1 Build解题报告</h2><h3 id="算法构思与实现要点"><a href="#算法构思与实现要点" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><p>本题主要任务在于维护一个多叉树，根据邻接表结构初始化，根据父子层次关系实现删除、插入子树操作，并在操作过程中维护节点高度和子树规模信息，便于查询。具体而言，每个节点是一个<code>Node</code>结构类型的指针，维护的信息包括：</p>
+<ul>
+<li><code>height</code>  子树高度，初始（指单节点时）为0</li>
+<li><code>size</code>  子树规模，初始为1</li>
+<li><code>childnum</code>  孩子节点数量，输入给出</li>
+<li><code>suffixMaxHeight</code>  同级后续兄弟（包括自己）的最大高度，避免在高度更新时遍历孩子节点，初始为0</li>
+<li><code>parent</code>  指向父节点（根节点为<code>nullptr</code>）</li>
+<li><code>firstChild</code>  指向长子节点（叶子节点为<code>nullptr</code>）</li>
+<li><code>prevSibling</code>  指向前一个兄弟节点</li>
+<li><code>nextSibling</code>  指向后一个兄弟节点</li>
+</ul>
+<p>可以看出，多个兄弟子节点之间通过双向链表结构维护，便于正向根据<code>rank</code>查询特定子节点以及反向更新高度信息；父子关系通过长子<code>firstChild</code>和<code>parent</code>维护，便于沿祖先路径反向更新子树规模信息。</p>
+<p>本题中，首先根据给出的子节点的邻接表结构初始化各节点的父子、兄弟关系（节点与编号的对应关系通过一个数组维护），然后按照BFS的顺序从上到下（从根到叶）、从左到右（从长子到末子）的顺序将所有节点压入临时数组中，沿逆向初始化<code>size</code>、<code>height</code>和<code>suffixMaxHeight</code>，具体而言，每弹出一个节点<code>cur</code>（非根节点），将对其父节点和直接长兄（若没有则为父节点）的上述信息更新：</p>
+<ul>
+<li>$$ \mathrm{cur\to parent\to size +&#x3D; cur\to size} $$</li>
+<li>非长子：$$ \mathrm{cur\to prevSibling\to suffixMaxHeight &#x3D; \max{cur\to prevSibling\to height, cur\to suffixMaxHeight}} $$</li>
+<li>长子：$$ \mathrm{cur\to parent\to height &#x3D; cur\to suffixMaxHeight + 1} \<br>  \mathrm{cur\to parent\to suffixMaxHeight &#x3D; cur\to parent\to height} $$</li>
+</ul>
+<p>由归纳法不难证明这样初始化的正确性：最先被弹出的“右下方”叶子节点已经被正确初始化（如上列出），假设前$k$个弹出的节点都已经被正确初始化，第$k+1$个弹出的节点的<code>size</code>、<code>height</code>和<code>suffixMaxHeight</code>只取决于右侧兄弟节点和下方节点，由于逆向的方向保证，这些节点一定已经先被弹出，利用它们的这三个信息更新得到的第$k+1$个节点信息也是正确的。</p>
+<p>此后的每次子树移动操作，包括一次节点删除操作和插入操作，根据给定路径从根节点出发找到对应节点后（其中，如果遇到某一层指定的子节点<code>rank</code>大于等于该节点的<code>childnum</code>就及时终止），改变局部节点连接关系，并相应更新节点存储的信息即可。具体而言，沿着直系祖先路径向上递归更新子树规模，沿着先向左再向上的路径，递归更新自己及所有长兄的和祖先节点的<code>suffixMaxHeight</code>和<code>height</code>，其他节点均不受局部删添的影响。</p>
+<p>对于每次查询操作，直接找到对应节点输出其保存的<code>height</code>或<code>size</code>信息即可。</p>
+<h3 id="完成过程中遇到的问题与解决过程"><a href="#完成过程中遇到的问题与解决过程" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>在调整局部连接关系的时候务必格外细心，注意每个需要更新的信息都要更新到，包括父节点的<code>childnum</code>、父子的连接关系、前后相邻兄弟节点的连接关系等，开始因为信息某些条件下的信息遗漏带来了漫长的debug。</li>
+<li>开始初始化操作是在每次一个节点上插入孩子节点时都进行一次节点信息更新，这样时间复杂度将达到$O(n^2)$量级，在某些极端情况下（如每个节点子节点数目都很少，甚至连成一条链）时会超时。调整为全部连接关系处理完成后一次性初始化节点信息，就能保证在$O(n)$复杂度内完成信息初始化。</li>
+<li>初始化时也要注意信息初始化完整，开始遗漏对长子处父节点<code>suffixMaxHeight</code>的初始化也会导致错误。</li>
+</ol>
+<h3 id="复杂度估算"><a href="#复杂度估算" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><ul>
+<li>时间复杂度：<ol>
+<li>初始化：新建节点、初始化连接关系、遍历节点压入临时数组、逆向逐一弹出节点更新父节点&#x2F;直接长兄节点信息这四大操作均与节点数量线性正比，故为$O(n)$。</li>
+<li>子树移动：主要时间消耗来自两次根据指定路径寻找节点、两次沿指定路径反向更新<code>suffixMaxHeight</code>和<code>height</code>，这两项操作均与题目定义的$cost$线性正比，以及两次沿直系祖先路径更新<code>size</code>，其在最坏情况下也将达到$cost$。至于局部连接关系调整可以在$O(1)$内完成。</li>
+<li>查询：主要时间消耗来自沿路径找到相应节点，也与$cost$线性正比。综上，2、3两项操作消耗的总时间为$O(cost)$，这里$cost$为题目定义所有操作$cost$的总和，$cost \le 10^6$。</li>
+<li>综上，该算法时间复杂度为$O(n+cost)$，其中通过后缀最大高度信息的维护避免了在访问每个节点时遍历所有节点，直接通过长子一步更新高度信息，是保证所有操作总数时间复杂度维持在$O(cost)$的关键。这一用节点信息维护区间信息的思想非常值得后续借鉴。</li>
+</ol>
+</li>
+<li>空间复杂度：主要空间消耗来自两次分别根据编号和BFS遍历次序暂存结点指针，故空间复杂度为$O(n)$。</li>
+</ul>
+<h2 id="PA3-2-NotFound解题报告"><a href="#PA3-2-NotFound解题报告" class="headerlink" title="PA3-2 NotFound解题报告"></a>PA3-2 NotFound解题报告</h2><h3 id="算法构思与实现要点-1"><a href="#算法构思与实现要点-1" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><p>本题主要的限制在存储的空间上，如果直接用<code>char</code>数组仅仅存储输入字符串最坏情况下就已经需要约17MB，因此采用<code>bitmap</code>方式对输入字符串以及后续用于标记已有子串的<code>bool</code>数组进行压位存储，每个0&#x2F;1只占用1个bit内存，总体内存开销大约能减小到用<code>char/bool</code>数组时的1&#x2F;8。具体算法实现主要分为以下几个部分：</p>
+<ol>
+<li>读入$A$：将输入的01串$A$存入一个<code>unsigned long long</code>数组中，使用<code>getchar()</code>读入，每64位为一个单位作为一个<code>unsigned long long</code>型数据存入数组；</li>
+<li>枚举子串长度$k$（代码中使用的字母是$i$）：注意到，长度为$k$的不同01串共有$2^k$种，而一个长度为$n$的01串最多包含$n-k+1$种长度为$k$的不同01串，要求长度为$n$的01串能包含所有长度为$k$的子串，要求：$$ n-k+1&gt;2^k $$ 本题中$n \le 16777216&#x3D;2^{24}$，由单调性和零点存在定理易得$k \le 23$ ，也就是说本题答案长度一定不超过$min{23, n}$，因此可以考虑直接从小到大枚举答案子串长度；</li>
+<li>枚举$A$中所有长度为$k$的子串（先读入第一个，然后通过左移、取模、读入下一位依次读取后续子串），将出现的子串当作一个二进制数，作为下标标记在<code>found</code>数组中（同样是bitmap方式存储），同时用一个整数<code>flag</code>记录当前长度为$k$的子串中没有被标记的最小01串，如果<code>flag &gt;= (1 &lt;&lt; k)</code>说明长度为$k$的所有子串都已被包含，直接进入下一循环；否则将找到的<code>flag</code>用<code>k</code>位二进制表示（高位补0）输出即为答案。</li>
+</ol>
+<ul>
+<li>注：用<code>unsigned long long</code>实现bitmap主要包含两个函数：<code>int get(ull bitmap[], int k)</code>获取bitmap中k号bit的值（0&#x2F;1），<code>void set(ull bitmap[], int k)</code>将bitmap中k号bit的值置1，具体实现方式部分参考讲义（将8位<code>char</code>数组改为了64位<code>unsigned long long</code>数组，通过右移后按位1实现<code>get</code>，与讲义上的<code>test</code>略有不同）。</li>
+</ul>
+<h3 id="完成过程中遇到的问题与解决过程-1"><a href="#完成过程中遇到的问题与解决过程-1" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>依次枚举$A$中所有长度为$k$的子串时，最初实现时在左移后漏掉了对$(2^k-1)$取模去掉最高位（潜意识里认为左移后最高位就溢出了，以后在想象整数的位存储表示时不要忘了包含高位前导0）。</li>
+<li>最初在输出答案时是直接输出整数<code>flag</code>的二进制表示，忽略了位长要求，即在本题中000和0是不同的情况。<br>两个问题均通过构造简单测例发现问题、输出中间结果和vscode断点调试解决。</li>
+</ol>
+<h3 id="复杂度估算-1"><a href="#复杂度估算-1" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><ul>
+<li>时间复杂度：设输入01串长度为$n(\le 2^{24})$，读入过程时间复杂度为$O(n)$，记$k&#x3D;min{23, n}$（一般地，事实上$k$约为$\log n$，但鉴于本题中常数不大采取简化实现），<code>get</code>、<code>set</code>操作均为$O(1)$复杂度，两层枚举复杂度为$O(nk)$，此外还有<code>flag</code>在<code>found</code>数组下标中的移动占用时间$O(2^1+…+2^k)&#x3D;O(2^{k+1})$，最坏情况下，估计操作总数$2^{24}+23<em>2^{24}+2^{25} &lt; 32</em>2^{24} &#x3D; 2^{29} \approx 0.5 * 10^9$，不会超时。</li>
+<li>空间复杂度：主要空间开销在于存储输入01串和维护标记数组，采用bitmap方式压位存储空间复杂度为$O(2*n&#x2F;8)$，实际最大空间开销约为$2 * \frac{2^{24}}{8}$B $\approx 4$MB $&lt; 6$MB，不会超出空间限制。</li>
+</ul>
+<h2 id="PA3-4-Kidd解题报告"><a href="#PA3-4-Kidd解题报告" class="headerlink" title="PA3-4 Kidd解题报告"></a>PA3-4 Kidd解题报告</h2><h3 id="算法构思与实现要点-2"><a href="#算法构思与实现要点-2" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><p>本题主要任务是维护一棵<strong>线段树</strong>，实现区间更新与区间查询操作。</p>
+<p>由于本题区间总长度 $n$ 上界过大，直接对 $[0, n]$ 区间用二分划分方式构建线段树带来的空间成本（包括时间成本）过高，因此首先需要进行<strong>区间离散化</strong>。具体而言，首先读入并在数组 $a$ 存储待查询的区间端点（共 $2m$ 个数，题目原来给的是每个区间的左闭右闭表示，读入后首先将右端点 $+1$ 改为左闭右开形式存储，方便后续操作在区间端点处不会重复记录），排序、去重后建立与数组下标的一一映射，线段树的节点只需存储数组下标，通过 $a$ 数组映射即可得到真实数据。</p>
+<p>线段树中的每个节点维护一段区间的信息，具体而言包括：</p>
+<ul>
+<li>区间左右端点对应的数组下标 $l, r$（左闭右开，对应区间 $[a[l], a[r])$ ）</li>
+<li>$[a[l], a[r])$区段内的所有翻转次数和 $sum$</li>
+<li>该节点被懒惰标记（标记覆盖全域、不再下传）的次数 $cnt$</li>
+<li>节点左右孩子地址 $lc, rc$（没有则为空指针）</li>
+</ul>
+<p>线段树中只需维护一个根节点$root$，即可通过内部节点指向关系维护树结构。此外，线段树还需要实现两个操作：</p>
+<ol>
+<li><strong>区间更新</strong>：从根节点出发递归更新 $[a[l], a[r])$ 覆盖到的节点的 $sum$ 值，对所标记区间被完全覆盖的节点懒惰标记 $cnt$ 加一，不再下传。</li>
+<li><strong>区间查询</strong>：对 $[a[l], a[r])$ 完全覆盖的节点的 $sum$ 值求和，必要时需要将懒惰标记下放。</li>
+</ol>
+<p>具体细节可参见下列伪代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 区间更新</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert_at</span><span class="params">(node, i, j)</span> </span>&#123;</span><br><span class="line">  l, r = node-&gt;l, node-&gt;r;</span><br><span class="line">  <span class="keyword">if</span> ([i, j)交[l, r)为空)</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  <span class="keyword">if</span> ([l, r)含于[i, j)) &#123;</span><br><span class="line">    更新当前节点的 <span class="built_in">sum</span> (+=a[r]-a[l]) 和 <span class="built_in">cnt</span> (+=<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  根据相交情况（l, r, i, j大小关系）更新当前节点 sum;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 递归下移</span></span><br><span class="line">  mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">  <span class="keyword">if</span> ([i, j)与[l, mid)有交) </span><br><span class="line">    递归更新左孩子;</span><br><span class="line">  <span class="keyword">if</span> ([i, j)与[mid, j)有交)</span><br><span class="line">    递归更新右孩子;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 区间查询</span></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">query_at</span><span class="params">(node, i, j)</span> </span>&#123;</span><br><span class="line">  l, r = node-&gt;l, node-&gt;r;</span><br><span class="line">  <span class="keyword">if</span> ([i, j)交[l, r)为空) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//递归基：找到了[i, j)在区间划分中的一个覆盖块，返回该块记录的sum值，停止下探</span></span><br><span class="line">  <span class="keyword">if</span> ([l, r)含于[i, j)) &#123;</span><br><span class="line">      <span class="keyword">return</span> node-&gt;sum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//未完全覆盖但有相交，需要将懒惰标记下放</span></span><br><span class="line">  ans = <span class="number">0</span>;</span><br><span class="line">  mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">  左孩子：sum += (a[mid] - a[l]) * node-&gt;cnt; cnt += node-&gt;cnt;</span><br><span class="line">  右孩子：sum += (a[r] - a[mid]) * node-&gt;cnt; cnt += node-&gt;cnt;</span><br><span class="line">  <span class="keyword">if</span> ([i, j)与[l, mid)有交) </span><br><span class="line">    ans += <span class="built_in">query_at</span>(node-&gt;lc, i, j);</span><br><span class="line">  <span class="keyword">if</span> ([i, j)与[mid, j)有交)</span><br><span class="line">    ans += <span class="built_in">query_at</span>(node-&gt;rc, i, j);</span><br><span class="line">  node-&gt;cnt = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="完成过程中遇到的问题与解决过程-2"><a href="#完成过程中遇到的问题与解决过程-2" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>scanf读入单字符的坑点：%c会接受转义字符，包括回车！在%c前加空格可过滤回车。</li>
+<li>双指针去重时，可能在最后连续重复而踩出界，务必及时退出！</li>
+<li>必须使用懒惰标记延迟下放才能保证查询时能在覆盖块处及时终止，停止下探，否则必须探到叶节点来做更新，一次查询即耗费最坏约$O(2·2m)$时间，必将TLE。</li>
+<li>注意下放时是把懒惰标记整个都删除了的，要下放两边都要一起下放！</li>
+</ol>
+<p>有许多问题是通过vscode调试以及对拍解决的。</p>
+<h3 id="复杂度估算-2"><a href="#复杂度估算-2" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><ul>
+<li><p>时间复杂度：</p>
+<ol>
+<li>读入、排序、去重区间端点值：$O(3m + 2m\log 2m + 2m)$</li>
+<li>每次查询前根据端点值($a[l], a[r]$)确定对应数组下标($l,r$)，需要进行两次二分查找，总共花费时间：$O(2m\log 2m)$</li>
+<li>对每次区间更新或查询操作，在线段树的每一层至多访问（更新&#x2F;查询$sum$值）四个节点（因为区间是连续的，在访问到某层时至多被分成两个连续的区间段，若涉及五个节点，其中必定有三个节点表示的区间段是连续的，且三个中至少完整覆盖两个区间，这两个区间的并就被完整覆盖，又由于左右二分的递归访问模式，这两个节点的公共父节点就已经被完全覆盖，不会再下传）。线段树是有$2m$个节点的完全二叉树，树高为$O(\log 2m)$，故每次访问最坏情况下时间复杂度约为$O(4\log 2m)$，总共时间开销约为：$O(4m\log 2m)$</li>
+<li>综上，总时间复杂度估算为$O(5m+8m\log 2m)$，记$\tilde{m}&#x3D;2m$，渐进估算为$O(\tilde{m}\log \tilde{m})$</li>
+</ol>
+</li>
+<li><p>空间复杂度：<br>线段树存储的总区间长度至多为$2m$，需要约$4m$个节点，故空间复杂度为$O(4m)$。</p>
+</li>
+</ul>
+<h2 id="PA3-6-Nearest-Neighbor解题报告"><a href="#PA3-6-Nearest-Neighbor解题报告" class="headerlink" title="PA3-6 Nearest Neighbor解题报告"></a>PA3-6 Nearest Neighbor解题报告</h2><h3 id="算法构思与实现要点-3"><a href="#算法构思与实现要点-3" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><p>本题主要任务时维护一棵<strong>kd树</strong>，分块式存储 $d$ 维空间中 $n$ 个点的位置和位置关系，实现给定点最近邻的快速查询。</p>
+<p>首先将 $n$ 个点的坐标读入数组 $p$ 中存储，每个点唯一对应一个数组下标。kd树的中内部节点负责记录空间划分相关信息，叶子节点负责集中记录这块空间内的点。为了减小树高同时充分利用缓存优化程序效率，每个叶子节点负责记录在数组中连续分布的约 $N$ (实践中取20较合适) 个坐标点。</p>
+<p>具体而言，<strong>内部节点</strong>需要存储：</p>
+<ul>
+<li>在该节点上的划分维度 $r \  (0 &lt;&#x3D; r &lt; d)$</li>
+<li>将左右孩子中的点划分开的分界线界桩 $marker$（即该节点下属包含的所有坐标点在第 $r$ 维的中位数）</li>
+<li>左右孩子地址 $lc, rc$</li>
+</ul>
+<p>为了方便统一节点数据类型，<strong>叶子节点</strong>继承了普通节点，但它主要需要存储的是：</p>
+<ul>
+<li>该叶子节点记录的区域在数组 $p$ 中开始、结尾的位置 $start, end$（左开右闭）</li>
+</ul>
+<p>读入数据后，首先要根据所给点坐标<strong>建树</strong>：从根节点 $root$ 出发，从第 $0$ 维开始，相继以第 $r$ 维作分界线划分数组 $p$ 中 $[start, end)$ 的坐标点。当该层节点数 $\le N$ 时，直接建立叶子节点存储 $start, end$ 并返回。否则，将 $[start, end)$ 内的坐标点按第 $r$ 维从小到大排序，得到中间坐标点数组下标 $mid &#x3D; (start + end) &#x2F; 2$，记录分界界桩值（$p[mid]$的第$r$维），然后交给左右孩子分别在第 $(r + 1) % d$ 维度划分 $[start, mid)$ 和 $[mid, end)$ 内的坐标点，直到该层节点数 $\le N$ 。</p>
+<p>接着就是<strong>查询每个询问点到最近邻的距离</strong>。具体而言，遵循以下步骤：</p>
+<ol>
+<li>在递归查找中传递一个公共变量<code>curMinDist</code>，维护当前搜索到的最近邻距离平方值，初始设为无穷大（大于最大可能值）；</li>
+<li>根据各个内部节点维护的划分信息，找到询问点所在的分区，在随机情况下，该分区内的坐标点离询问点距离近的概率较大，找到对应叶子节点后暴力搜索该分区内的最近邻，更新<code>curMinDist</code>；</li>
+<li>递归回溯到上一层节点，计算到分界界桩的距离平方，若大于等于当前维护的<code>curMinDist</code>，则分界线另一侧所有坐标点都不可能是最近邻（至少不是唯一的），即可剪去对另一分支的搜索；否则仍需下探搜索另一侧，并且在每一层都首先执行上述判定剪去不必要的搜索；</li>
+<li>以此类推，不断向上层递归回溯，最终记录的<code>curMinDist</code>即为整体的最近邻距离平方值。</li>
+</ol>
+<h3 id="完成过程中遇到的问题与解决过程-3"><a href="#完成过程中遇到的问题与解决过程-3" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>局部变量一定要初始化！初始化为0不可省！</li>
+<li>快排模板要背熟！细节要理解处理清除（以上两个问题通过vscode调试观察中间变量值找出并解决）</li>
+<li>在搜索到某一层节点时，若询问点到分界界桩的距离平方大于等于当前维护的<code>curMinDist</code>，只能保证在分界线的另一侧不可能有更小的距离值，不能保证在询问点所在这一侧没有！（该问题通过在小数据范围内与蛮力遍历算法对拍找出，通过分析错误样例找到问题所在并解决）</li>
+</ol>
+<h3 id="复杂度估算-3"><a href="#复杂度估算-3" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><ul>
+<li><p>时间复杂度：</p>
+<ol>
+<li>建树过程：kd树是一棵完全二叉树，$n$ 个坐标点大约划分为 $n&#x2F;N$ 个叶子节点存储，故树高估算为 $O(\log \frac{n}{N})$；在深度 $h$ 层需要对长为 $n &#x2F; 2^h$ 的序列进行共计 $2^h$ 次快速排序，则总共的时间开销为：$O(\sum\limits_{h&#x3D;1}^{\log\frac{n}{N}} 2^h·\frac{n}{2^h}\log\frac{n}{2^h}) &#x3D; O(\frac{n}{2}\log\frac{n}{N}\log nN)$，渐进复杂度为$O(n\log^2 n)$</li>
+<li>查询过程：每次查询最好情况为一次查到：$O(\log\frac{n}{N} + N)$，最坏情况为全部遍历$O(2\frac{n}{N} + n)$，在$n \gg d$ 且数据均匀随机分布的情况下，平均而言在最近邻就分布在问询点所在分区最近的几个叶子节点处，故 $q$ 次查询总的平均渐进时间复杂度为 $O(q(\log\frac{n}{N} + N))$</li>
+</ol>
+</li>
+<li><p>空间复杂度：主要空间开销包括在数组中存储 $n$ 个 $d$ 维点的坐标以及kd树中存储约 $2n&#x2F;N$ 个节点，渐进复杂度为 $O(n)$。</p>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2023/01/06/DSA%20PA3/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2023/01/06/DSA%20PA3/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

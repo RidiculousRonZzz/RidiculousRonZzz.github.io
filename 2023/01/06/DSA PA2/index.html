@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo.png"/>
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Kevin's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kevin's blog" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">KEVIN</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%9A%8F%E7%AC%94/">论文随笔</a></li><li><a class="category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/">课程报告</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/homepage/" title="学术主页">
+		                学术主页
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Kevin-thu" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="twitter" href="https://twitter.com/sze68zkw" target="_blank" rel="noopener">
+                            <i class="icon fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >DSA PA2 Report</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="DSA-PA2-Report"><a href="#DSA-PA2-Report" class="headerlink" title="DSA PA2 Report"></a>DSA PA2 Report</h1><h2 id="PA2-1-Risk解题报告"><a href="#PA2-1-Risk解题报告" class="headerlink" title="PA2-1 Risk解题报告"></a>PA2-1 Risk解题报告</h2><h3 id="算法构思与实现要点"><a href="#算法构思与实现要点" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><ol>
+<li>首先，将每天感染人数和向前查询天数（$m_i$）读入<code>num</code>和<code>m</code>数组中，并维护一个<code>Queap</code>类的实例<code>q</code>（能够执行<code>push</code>，<code>pop_to_size</code> [弹出元素直至主队列元素个数为指定size] 和 <code>get_max</code> [返回当前队列中最大元素] 操作）。</li>
+<li>接着，逐日求出当日前$m_i$天的最大病例数，具体而言：由于$i-m_i$单调非减，到第$i$天时<code>q</code>中至多只需要维护前$m_i$天的数据，因此若此时<code>q.size() &gt; m[i]</code>，则先调用<code>q.pop_to_size(m[i])</code>将<code>q</code>的大小进行缩减，此时暴露在<code>q</code>队首所指的也恰好就是待查询（至多）$m_i$长度后缀中最大元素的位置，此时只需对<code>q</code>调用<code>get_max</code>并将数据存入数组（<code>record[i] = q.get_max()</code>），然后将第$i$天病例数<code>num[i]</code>加入<code>q</code>即可。</li>
+<li>最后，调用<code>qsort</code>对<code>record</code>数组中记录的数据由小到大排序，并调用二分查找分别找出<code>record</code>中（严格）小于<code>p</code>和小于<code>q</code>的最大元素的位置，由此求出低中风险天数即可。</li>
+</ol>
+<ul>
+<li>注：<code>Queap</code>类实现要点：<ul>
+<li>内部维护两个数组<code>queue</code>和<code>max_record</code>（仅就本题数据范围考虑分配足够空间，因此并未额外实现扩容等操作），分别记录主队列中存放的数据和队列后缀中最大元素位置（数组下标）。另有两组数分别记录<code>queue</code>和<code>max_record</code>的首尾位置，通过这组指针的移动模拟对队列增删等操作</li>
+<li><code>push()</code>函数：在主队列<code>queue</code>尾部加入数据，然后从后往前将新数据与<code>max_record</code>记录的后缀最大元素比较，如果新元素大于等于记录元素就将<code>max_record</code>的尾指针不断前移，直到不满足条件时将<code>max_record</code>的尾部记录新元素位置</li>
+<li><code>pop_to_size(int size)</code>函数：将<code>queue</code>的头指针直接移到尾指针减<code>size</code>的位置，代表让前面元素一次性出队，然后从头部开始逐一检查<code>max_record</code>中记录得到最大元素位置是否已经出队，若所记录的元素已经出队则让<code>max_record</code>的头元素也出队即可</li>
+<li><code>get_max()</code>函数：直接返回<code>max_record</code>头元素所指向的<code>queue</code>中的元素（<code>queue[max_record[head]]</code>）即可</li>
+</ul>
+</li>
+</ul>
+<h3 id="完成过程中遇到的问题与解决过程"><a href="#完成过程中遇到的问题与解决过程" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>直接调用课上所讲的二分查找函数返回的是不大于$p&#x2F;q$的最大元素位置，而此处要求查找的是严格小于$p&#x2F;q$的最大元素位置，为此只需要改为查找不大于$p-1&#x2F;q-1$的最大元素位置即可；由于数组坐标从0开始，最后计算数量时还需要在查找出来的坐标值基础上+1</li>
+<li>开始没有注意$m_i$和$p,q$数据范围已经超出<code>int</code>最大正整数范围，导致在九成测中有两个测例没有通过，将对应部分均改为<code>long long</code>即可</li>
+</ol>
+<h3 id="复杂度估算"><a href="#复杂度估算" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><p>设统计天数为$n$，每次处理一天需要进行一次<code>push</code>、一次<code>get_max</code>和至多一次<code>pop_to_size</code>操作，由于<code>push</code>操作中每个元素的下标最多从<code>max_record</code>的队尾进入一次、出去一次，总操作数$\le 2n$，<code>pop_to_size</code>操作中每个元素下标最多从队首出去一次，总操作数$\le n$，整体总操作数$\le 3n$，故处理单日数据的分摊复杂度为$O(1)$，全部处理完的时间复杂度约为$O(n)$。对$n$个元素的<code>record</code>数组调用<code>qsort</code>排序,时间复杂度为$O(n \log n)$。设共有$T$次查询，每次查询调用两次二分查找，总时间复杂度为$O(T·2 \log n)$，故整个算法时间复杂度约为$O(n+(n+2T)\log n)$。使用三个数组分别存储每日病例数、查询天数、查询天数中的最大数，且Queap中也要分配相应大小的空间存储数据，空间复杂度约为$O(n)$。</p>
+<h2 id="PA2-2-Polynomial解题报告"><a href="#PA2-2-Polynomial解题报告" class="headerlink" title="PA2-2 Polynomial解题报告"></a>PA2-2 Polynomial解题报告</h2><h3 id="算法构思与实现要点-1"><a href="#算法构思与实现要点-1" class="headerlink" title="算法构思与实现要点"></a>算法构思与实现要点</h3><p>实现一个<code>Polynomial</code>类，用一个数组存储多项式各次项系数，一个整数<code>high</code>标记最高位次数，然后重载<code>+=</code>、<code>-=</code>、<code>*=</code>、<code>^=</code>，即可像处理整数一样处理多项式，使用中缀表达式求值的方法即可求出结果多项式。</p>
+<ul>
+<li>具体而言，先实现一个<code>Stack</code>类并维护一个<code>Stack&lt;char&gt;</code>类的符号栈和一个<code>Stack&lt;Polynomial*&gt;</code>类的多项式栈，每当在表达式串中遇到一个整数（不在<code>^</code>之后）或字符<code>x</code>时，都会<code>new</code>出一个<code>Polynomial</code>类的指针压入栈中；每当遇到一个<code>^</code>符号时，会同时读入下一个整数（因为最高只可能是4次方，且次幂位置无其他符号），取出栈顶多项式完成相应运算后压入栈中；每当遇到<code>+</code>、<code>-</code>、<code>*</code>符号时，按照约定优先级判断是将符号压入符号栈中还是取出栈顶多项式和符号执行相应运算。另外，还需要特判一下两种省略<code>*</code>的情况，相应将<code>*</code>压入栈中（严格来说，此处应该先判断<code>*</code>与栈顶符号优先级，再判定是将<code>*</code>压入栈中还是执行栈顶运算；但由于<code>*</code>优先级比其他两个符号都更高，因此直接将省略<code>*</code>可能带来的唯一影响就是乘法右结合而非左结合，但根据乘法结合律不会影响运算结果，因此此处可以直接将省略的<code>*</code>压入栈中）。</li>
+<li>注：<code>Polynomial</code>类实现要点：<ul>
+<li><code>+=</code>、<code>-=</code>实现较为简单，对应系数相加减，按需求更改<code>high</code>即可。</li>
+<li>为了使整体实现更加简洁优雅，<code>*=</code>、<code>^=</code>共用了一个<code>multiply(long long* a, const long long* p_a, int&amp; high, int p_high)</code>函数，其中<code>a</code>和<code>p_a</code>是两个存储多项式系数的数组，<code>high</code>和<code>p_high</code>分别记录两个多项式的最高次数（也就对应数组的边界），<code>multiply</code>可以在不额外分配空间的情况下在<code>a</code>的空间上原地实现<code>a</code>和<code>p_a</code>的多项式相乘，结果放在<code>a</code>中，由于是从结果的高次方系数位向低次方系数位计算，因此不会发生数据覆盖，以此省去了用<code>new</code>重新分配空间储存结果的时间和空间开销，具体实现可参见代码。</li>
+<li>由于<code>^=</code>后次幂最多为四次方，因此分为了四种情况单独判断处理，相应调用<code>multiply</code>函数解决，3次方和4次方都是调用两次<code>multiply</code>即可计算出结果。</li>
+</ul>
+</li>
+</ul>
+<h3 id="完成过程中遇到的问题与解决过程-1"><a href="#完成过程中遇到的问题与解决过程-1" class="headerlink" title="完成过程中遇到的问题与解决过程"></a>完成过程中遇到的问题与解决过程</h3><ol>
+<li>开始没有特判“若结果为0，则直接输出0”的情况，此时<code>high</code>会被减到负数，输出为空，特判一下即可。</li>
+<li>在计算3次方时开始没有注意经过第一次2次方后<code>high</code>已经变成原来的2倍了，修改即可。</li>
+<li>当当前读入的符号比栈顶符号优先级高的时候，不应当把当前符号压入符号栈或继续读取下一字符，因为这个s可能会引起前面一系列运算符的运算（比如当前符号恰为右括号），必须等这一系列运算都算完了，碰到下一个case’&lt;’的情况s才能++。</li>
+<li>当完成一次多项式二元运算后应当把多余的<code>Polynomial</code>指针立刻<code>delete</code>掉，否则会引起内存泄漏导致MLE，这警示之后要时刻注意及时<code>delete</code>掉<code>new</code>分配出的已经无用的空间，避免内存泄漏。</li>
+<li>困扰我最久的一个错误是TOJ上两个点报出的<code>Runtime Error (trap 253 SIGABRT)</code>错误，引起相应错误的测例在本地无论如何都找不出来，但可以调试出来是<code>Stack</code>类实现中的一个问题。无奈之下，某一天晚上我随手改了<code>Stack</code>类的构造函数，将 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Stack</span>() <span class="keyword">try</span>: _elem(<span class="keyword">new</span> T[capacity]) &#123;&#125;</span><br></pre></td></tr></table></figure>
+ 改为 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Stack</span>() &#123;</span><br><span class="line">    _elem = <span class="keyword">new</span> T[capacity];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 立刻就得以通过。这一奇怪的现象引起了我的兴趣，我进一步上StackOverflow上查阅了相关资料（由于这是解决问题后的拓展查询而非参考资料，没有写入Honor Code中），据说是在初始化列表里用new分配空间<strong>有可能</strong>会失败报错。于是我进一步探索发现，这一问题除了用上述写入构造函数体的办法解决之外，用<code>try</code> <code>catch</code>捕获一下<code>new</code>分配空间时报出的<code>std::bad_alloc</code>异常也可通过测试，如下： <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Stack</span>() <span class="keyword">try</span>: _elem(<span class="keyword">new</span> T[capacity]) &#123;&#125;</span><br><span class="line"><span class="built_in">catch</span>(<span class="type">char</span>* str) &#123;&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="复杂度估算-1"><a href="#复杂度估算-1" class="headerlink" title="复杂度估算"></a>复杂度估算</h3><p>中缀表达式求值为一趟线性扫描算法，中间每个符号最多入栈一次出栈一次，每个多项式最多入栈两次出栈两次（二元运算符计算的结果会导致第二次进栈，但此时一定有一个参与二元运算的多项式不会再进栈；将次方上的幂指数也看做一个多项式），因此整体运算次数与输入字符串长度$n$成正比，为$O(n)$，每次运算至多进行2次乘法，由于整个过程中最高次数不超过$m$，每次运算时间复杂度最高不超过$O(2(m&#x2F;2)^2)$。空间开销主要在于栈中存储中间运算结果多项式和符号，多项式最高次数不超过$m$，因此空间复杂度为$O(mn)$。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2023/01/06/DSA%20PA2/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2023/01/06/DSA%20PA2/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

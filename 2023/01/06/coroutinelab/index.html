@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo.png"/>
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Kevin's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kevin's blog" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">KEVIN</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%9A%8F%E7%AC%94/">论文随笔</a></li><li><a class="category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/">课程报告</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/homepage/" title="学术主页">
+		                学术主页
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Kevin-thu" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="twitter" href="https://twitter.com/sze68zkw" target="_blank" rel="noopener">
+                            <i class="icon fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://static.sitestack.cn/projects/CSAPP-3e-Solutions/assets/csapp3e-cover.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >ICS Lab1 Coroutine Report</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="ICS-Lab1-Coroutine实验报告"><a href="#ICS-Lab1-Coroutine实验报告" class="headerlink" title="ICS Lab1 Coroutine实验报告"></a>ICS Lab1 Coroutine实验报告</h1><blockquote>
+<p>张凯文 2021010729 计12班 2022年11月21日</p>
+</blockquote>
+<h2 id="Task-1-协程库的实现"><a href="#Task-1-协程库的实现" class="headerlink" title="Task 1: 协程库的实现"></a>Task 1: 协程库的实现</h2><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>首先，在<code>coroutine_pool.h</code>中，实现了（不考虑协程ready属性的）协程池以串行调用执行协程的核心函数<code>coroutine_pool::serial_execute_all</code>：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">coroutine_pool::serial_execute_all</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    is_parallel = <span class="literal">false</span>;</span><br><span class="line">    g_pool = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* START OF MY CODE */</span></span><br><span class="line">    <span class="type">int</span> unfinished = coroutines.<span class="built_in">size</span>();  <span class="comment">//记录未执行完成的协程总数</span></span><br><span class="line">    <span class="keyword">while</span>(unfinished) &#123;  <span class="comment">//仍有协程未执行完时，需要重新轮询</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; coroutines.<span class="built_in">size</span>(); ++i) &#123;  <span class="comment">//通过vector下标轮询协程</span></span><br><span class="line">          <span class="keyword">if</span>(!coroutines[i]-&gt;finished) &#123;  <span class="comment">//如果未执行完</span></span><br><span class="line">              context_id = i;             <span class="comment">//更新当前正在执行的协程id</span></span><br><span class="line">              coroutines[i]-&gt;<span class="built_in">resume</span>();    <span class="comment">//恢复执行当前协程</span></span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;                       </span><br><span class="line">            <span class="keyword">if</span>(coroutines[i]-&gt;ready) &#123;    <span class="comment">//如果已经当前询问的协程执行完成且之前没有更新过unfinished，更新标记</span></span><br><span class="line">                --unfinished;</span><br><span class="line">                coroutines[i]-&gt;ready = <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* END OF MY CODE */</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> context : coroutines) &#123;</span><br><span class="line">      <span class="keyword">delete</span> context;</span><br><span class="line">    &#125;</span><br><span class="line">    coroutines.<span class="built_in">clear</span>();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，在<code>context.h</code>和<code>common.h</code>中分别实现了切入和切出协程的函数<code>resume</code>和<code>yield</code>:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 恢复协程函数运行。</span></span><br><span class="line"><span class="comment"> * 调用 coroutine_switch，保存当前协程池的执行现场（将 callee-saved 寄存器内容暂存到当前协程的 caller_register 数组中）；</span></span><br><span class="line"><span class="comment"> * 恢复当前协程在上一次 yield 时的执行现场（将 callee_registers 数组中保存的内容恢复到真实寄存器上，设置协程栈帧（%rsp指向的位置），将 rip 恢复到协程 yield 之后所需要执行的指令地址）。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">coroutine_context::resume</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">coroutine_switch</span>(caller_registers, callee_registers);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 协程主动暂停执行，保存协程的寄存器和栈帧。</span></span><br><span class="line"><span class="comment"> * 将上下文转换至 coroutine_pool.serial_execute_all() 中的上下文进行重新的 schedule 调用。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">yield</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!g_pool-&gt;is_parallel) &#123;</span><br><span class="line">    <span class="comment">// 从 g_pool 中获取当前协程状态</span></span><br><span class="line">    <span class="keyword">auto</span> context = g_pool-&gt;coroutines[g_pool-&gt;context_id];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用 coroutine_switch 切换到 coroutine_pool 上下文</span></span><br><span class="line">    <span class="built_in">coroutine_switch</span>(context-&gt;callee_registers, context-&gt;caller_registers);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>并在<code>context.S</code>中编写实现<code>coroutine_switch</code>的汇编代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">.global coroutine_switch</span><br><span class="line">coroutine_switch:</span><br><span class="line">    # 保存 callee-saved 寄存器到 %rdi 指向的上下文</span><br><span class="line">    movq %rsp, 64(%rdi)</span><br><span class="line">    movq %rbx, 72(%rdi)</span><br><span class="line">    movq %rbp, 80(%rdi)</span><br><span class="line">    movq %r12, 88(%rdi)</span><br><span class="line">    movq %r13, 96(%rdi)</span><br><span class="line">    movq %r14, 104(%rdi)</span><br><span class="line">    movq %r15, 112(%rdi)</span><br><span class="line">    # 保存的上下文中 rip 指向 ret 指令的地址（.coroutine_ret）</span><br><span class="line">    leaq .coroutine_ret(%rip), %rax</span><br><span class="line">    movq %rax, 120(%rdi)</span><br><span class="line"></span><br><span class="line">    # 从 %rsi 指向的上下文恢复 callee-saved 寄存器</span><br><span class="line">    movq 64(%rsi),  %rsp</span><br><span class="line">    movq 72(%rsi),  %rbx</span><br><span class="line">    movq 80(%rsi),  %rbp</span><br><span class="line">    movq 88(%rsi),  %r12</span><br><span class="line">    movq 96(%rsi),  %r13</span><br><span class="line">    movq 104(%rsi), %r14</span><br><span class="line">    movq 112(%rsi), %r15</span><br><span class="line">    # 最后 jmpq 到上下文保存的 rip</span><br><span class="line">    jmpq *120(%rsi)</span><br><span class="line"></span><br><span class="line">.coroutine_ret:</span><br><span class="line">    ret</span><br></pre></td></tr></table></figure>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>一个协程（<code>coroutine_context</code>类的实例）保存的核心信息包括：</p>
+<ul>
+<li>协程函数<code>F</code>及其参数<code>Args</code></li>
+<li>一个指向协程函数栈帧基址的指针<code>stack</code></li>
+<li>两个暂存协程池和协程函数寄存器状态的数组<code>caller_registers</code>和<code>callee_registers</code></li>
+</ul>
+<p>初始化一个协程时（未被协程调用之前）：</p>
+<ol>
+<li>首先在堆上为当前协程要执行的函数分配一块指定大小的栈帧空间（默认16KB），并将<code>callee_registers</code>中<code>rsp</code>位置初始化为“栈顶”地址（这块空间最高位地址）；</li>
+<li>同样在<code>callee_registers</code>中，将最初的<code>rip</code>设置为<code>coroutine_entry</code>的地址，并将<code>r12</code>、<code>r13</code>位置分别设置为<code>coroutine_main</code>函数的地址和参数（指向当前协程自身的指针<code>this</code>）。</li>
+</ol>
+<p>当协程池第一次调用当前协程时，上述在<code>callee_registers</code>中初始化的寄存器信息就会被拷贝到真实寄存器上，因此第一次调用该协程时首先执行的是地址保存在<code>rip</code>中的<code>coroutine_entry</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">coroutine_entry:</span><br><span class="line">    movq %r13, %rdi</span><br><span class="line">    callq *%r12</span><br></pre></td></tr></table></figure>
+<p><code>coroutine_entry</code>将r13中保存的参数拷贝到rdi（保存调用函数的第一个参数）中，随即调用地址保存在<code>r12</code>中的<code>coroutine_main</code>函数：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">coroutine_main</span><span class="params">(<span class="keyword">struct</span> basic_context *context)</span> </span>&#123;</span><br><span class="line">  context-&gt;<span class="built_in">run</span>();</span><br><span class="line">  context-&gt;finished = <span class="literal">true</span>;</span><br><span class="line">  <span class="built_in">coroutine_switch</span>(context-&gt;callee_registers, context-&gt;caller_registers);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// unreachable</span></span><br><span class="line">  <span class="built_in">assert</span>(<span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>至此，当前协程调用<code>run()</code>，所保存的协程函数<code>F</code>才真正开始执行起来。在<code>F</code>执行过程中，随时有可能调用<code>yield</code>主动暂停执行，保存当下执行现场（协程的寄存器和栈帧），将CPU控制权还给协程池的调度函数，直到下一次<code>resume</code>恢复上一次的执行现场继续执行。这样的过程可能重复出现，直到<code>F</code>函数彻底执行完毕退出，协程主函数<code>coroutine_main</code>中<code>context-&gt;run()</code>这条语句才算执行完成，随后将当前协程<code>context</code>的<code>finished</code>状态标为<code>true</code>，并将控制权交还给协程池，当前协程执行完毕。</p>
+<p>在协程切换时，栈和寄存器的变化可以用下图说明：<br><img src="https://img2.imgtp.com/2024/01/23/NKpTygg4.jpg"></p>
+<h2 id="Task-2-实现-sleep-函数"><a href="#Task-2-实现-sleep-函数" class="headerlink" title="Task 2: 实现 sleep 函数"></a>Task 2: 实现 sleep 函数</h2><h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h3><p>在<code>coroutine_pool.h</code>中，考虑协程的<code>ready</code>属性后，实现了完整的<code>coroutine_pool::serial_execute_all</code>函数：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">serial_execute_all</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  is_parallel = <span class="literal">false</span>;</span><br><span class="line">  g_pool = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line">  <span class="type">int</span> unfinished = coroutines.<span class="built_in">size</span>();</span><br><span class="line">  <span class="keyword">while</span>(unfinished) &#123;</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; coroutines.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span>(!coroutines[i]-&gt;finished) &#123;</span><br><span class="line">          <span class="comment">/* START OF MY TASK2 CODE */</span></span><br><span class="line">          <span class="keyword">if</span>(coroutines[i]-&gt;ready) &#123;  <span class="comment">//如果当前询问的协程是ready的，才真正执行调用</span></span><br><span class="line">            context_id = i;</span><br><span class="line">            coroutines[i]-&gt;<span class="built_in">resume</span>();</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            coroutines[i]-&gt;ready = coroutines[i]-&gt;<span class="built_in">ready_func</span>();  <span class="comment">//如果还没ready，就不用费事切换进去了，转而通过ready_func查看创建时间戳，更新ready状态</span></span><br><span class="line">          &#125;</span><br><span class="line">          <span class="comment">/* END OF MY TASK2 CODE */</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">if</span>(coroutines[i]-&gt;ready) &#123;</span><br><span class="line">            --unfinished;</span><br><span class="line">            coroutines[i]-&gt;ready = <span class="literal">false</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span> context : coroutines) &#123;</span><br><span class="line">    <span class="keyword">delete</span> context;</span><br><span class="line">  &#125;</span><br><span class="line">  coroutines.<span class="built_in">clear</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>并在<code>common.h</code>中完成<code>sleep</code>函数：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">sleep</span><span class="params">(<span class="type">uint64_t</span> ms)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (g_pool-&gt;is_parallel) &#123;</span><br><span class="line">    <span class="keyword">auto</span> cur = <span class="built_in">get_time</span>();</span><br><span class="line">    <span class="keyword">while</span> (</span><br><span class="line">        std::chrono::<span class="built_in">duration_cast</span>&lt;std::chrono::milliseconds&gt;(<span class="built_in">get_time</span>() - cur)</span><br><span class="line">            .<span class="built_in">count</span>() &lt; ms)</span><br><span class="line">      ;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">/* START OF MY CODE */</span></span><br><span class="line">    <span class="keyword">auto</span> context = g_pool-&gt;coroutines[g_pool-&gt;context_id];  <span class="comment">// 从 g_pool 中获取当前协程状态</span></span><br><span class="line">    context-&gt;ready = <span class="literal">false</span>;  <span class="comment">//将协程置为不可用状态</span></span><br><span class="line">    <span class="comment">// 获取当前时间，更新 ready_func</span></span><br><span class="line">    <span class="comment">// ready_func：检查当前时间，如果已经超时，则返回 true (注册该函数相当于打下一个时间戳)</span></span><br><span class="line">    <span class="keyword">auto</span> cur = <span class="built_in">get_time</span>();</span><br><span class="line">    context-&gt;ready_func = [cur, ms]() &#123;</span><br><span class="line">      <span class="keyword">return</span> std::chrono::<span class="built_in">duration_cast</span>&lt;std::chrono::milliseconds&gt;(<span class="built_in">get_time</span>() - cur)</span><br><span class="line">            .<span class="built_in">count</span>() &gt;= ms;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="built_in">yield</span>();  <span class="comment">// 切出协程，切换到 coroutine_pool 上下文</span></span><br><span class="line">    <span class="comment">/* END OF MY CODE */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分析-1"><a href="#分析-1" class="headerlink" title="分析"></a>分析</h3><p><code>sleep_sort</code>的基本执行流程为：</p>
+<ol>
+<li>在第一次轮询时，所有初始化的协程均为<code>ready</code>状态，会依次执行<code>sleep</code>函数，将协程的<code>ready</code>状态置为<code>false</code>，并注册<code>ready_func</code>，打下开始睡眠时的时间戳，然后切出；</li>
+<li>之后协程池会不断重复轮询各个协程，调用<code>ready_func</code>更新各个协程的<code>ready</code>状态；</li>
+<li>睡眠时间最少的协程将最早达到预定时间，最早被更新为<code>ready</code>状态，那么在紧接着的下一次轮询中该协程就会被恢复调用，执行<code>printf</code>语句打印保存的<code>x</code>值（睡眠时间的ms数），因此，<code>x</code>越小睡眠时间越少，就越先被打印出来，从而实现从小到大的排序功能；</li>
+<li>协程一旦被执行完成，会被更新为<code>finished</code>状态，那么在下一次轮询到它时，会将<code>unfinished</code>数减1，同时再次将它的<code>ready</code>状态置为<code>false</code>，这里的<code>ready</code>起到标记该已完成的协程是否更新过<code>unfinished</code>数的作用，防止同一个已完成的协程反复更新<code>unfinished</code>数导致协程池调度函数异常提前退出；</li>
+<li>上述2-4步会重复执行，直到<code>unfinished</code>数为0，全部协程执行完成，相应地，输入的整数也被由小到大依次打印。</li>
+</ol>
+<p>下面以$n&#x3D;3$，输入序列为$3\  1\  2$为例，展示<code>sleep_sort</code>中不同协程的运行情况（注：协程函数<code>F</code>仅展示代入参数实现实际功能的伪代码）：<br><img src="https://img2.imgtp.com/2024/01/23/qoDoOXXC.png"><br><img src="https://img2.imgtp.com/2024/01/23/YMq8qELs.png"><br><img src="https://img2.imgtp.com/2024/01/23/LNz2uqlO.png"></p>
+<p>目前的协程库实现方式是不断重复轮询各个协程<code>ready_func</code>是否为<code>true</code>更新<code>ready</code>状态实现的，事实上，也可以通过在协程池中根据第一次轮询时各个协程睡眠时间长短维护一个优先级队列（睡眠时间最短的协程在队首），后续每次只须询问队首协程是否<code>ready</code>，调用<code>ready_func</code>更新队首协程状态即可（避免了调用后续协程的<code>ready_func</code>做无效更新），直到队首协程<code>ready</code>为<code>true</code>，执行该协程并将其弹出优先级队列，以此类推，直到队列为空为止。</p>
+<h2 id="Task-3-利用协程优化二分查找"><a href="#Task-3-利用协程优化二分查找" class="headerlink" title="Task 3: 利用协程优化二分查找"></a>Task 3: 利用协程优化二分查找</h2><h3 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">lookup_coroutine</span><span class="params">(<span class="type">const</span> <span class="type">uint32_t</span> *table, <span class="type">size_t</span> size, <span class="type">uint32_t</span> value,</span></span></span><br><span class="line"><span class="params"><span class="function">                      <span class="type">uint32_t</span> *result)</span> </span>&#123;</span><br><span class="line">  <span class="type">size_t</span> low = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> ((size / <span class="number">2</span>) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="type">size_t</span> half = size / <span class="number">2</span>;</span><br><span class="line">    <span class="type">size_t</span> probe = low + half;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* START OF MY CODE */</span></span><br><span class="line">    <span class="comment">// 使用 __builtin_prefetch 预取容易产生缓存缺失的内存</span></span><br><span class="line">    <span class="comment">// 并调用 yield</span></span><br><span class="line">    __builtin_prefetch(&amp;table[probe]);</span><br><span class="line">    <span class="built_in">yield</span>();</span><br><span class="line">    <span class="comment">/* END OF MY CODE */</span></span><br><span class="line"></span><br><span class="line">    <span class="type">uint32_t</span> v = table[probe];</span><br><span class="line">    <span class="keyword">if</span> (v &lt;= value) &#123;</span><br><span class="line">      low = probe;</span><br><span class="line">    &#125;</span><br><span class="line">    size -= half;</span><br><span class="line">  &#125;</span><br><span class="line">  *result = low;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="分析-2"><a href="#分析-2" class="headerlink" title="分析"></a>分析</h3><p>利用协程主要就是为了优化从<code>table</code>中取值（<code>uint32_t v = table[probe]</code>）这一句，由于二分查找的非局部性，待取的值很可能不在缓存中，这时可以不要立刻去内存中找值，而是切换到其他协程干其他活的同时让 CPU 异步将要用的数据预取到缓存区，等到再返回到刚才使用预取指令的协程的时候，CPU 已经把数据读取到了缓存中，从而省下了去内存中读取数据的这一段 IO 时间。</p>
+<p>以下是性能提升效果的展示：</p>
+<blockquote>
+<p>测试环境：Linux hp 5.4.0-132-generic #148-Ubuntu 系统；x86_64 架构；g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0 编译器</p>
+</blockquote>
+<ol>
+<li><p>改变 batch size（协程池中一次放入的协程个数）对性能的影响：<br><img src="https://img2.imgtp.com/2024/01/23/qEIXlSST.png"><br>可以发现，在 batch size 设为 8~32 时对二分查找性能提升的效果较明显，当 batch size 设得太小时，CPU 还没来得及将数据预取到缓存区就再次轮询到原协程，与并行执行相比反而影响了性能；batch size 过大时可能由于不同协程间切换操作过多等也会影响性能。</p>
+</li>
+<li><p>改变排序数组大小对性能的影响：<br><img src="https://img2.imgtp.com/2024/01/23/NZnK1GQJ.png"><br>可以发现，当排序数组过小时，缓存大部分时候足以包含到待取数据，引入协程串行执行也将成为画蛇添足，会影响性能；只有当待排序数组足够大时才有性能提升效果。</p>
+</li>
+</ol>
+<blockquote>
+<p>注：源代码和实验数据放在代码包<code>/exp</code>目录下。</p>
+</blockquote>
+<h2 id="总结与感想"><a href="#总结与感想" class="headerlink" title="总结与感想"></a>总结与感想</h2><p>本次协程实验使我第一次站在系统层面理解程序运行的过程，协程库的实现让我深入理解了协程池调度函数和各个协程之间的相互关系，其中协程切换汇编代码的实现让我对内存的布局结构以及协程切换、函数调用时寄存器和栈的变化有了进一步的理解，深刻认识到寄存器、栈帧的状态和返回地址记录一个函数的执行现场的作用，能够通过设置rip指向的地址直接控制程序执行的走向是最让我感到激动和成就感的部分；协程睡眠的实现使我学会通过注册函数储存和访问历史信息；二分查找的性能优化使我对缓存预取和协程串行运行的实际意义有了直观的认识。整个实验完成下来，从最开始的举步维艰到逐步对整个协程运行架构有了整体深刻的理解，我深感受益匪浅。</p>
+<blockquote>
+<p>注：本次实验主体部分均为我个人独立完成，主要用到的参考是助教老师的框架导读；Task3中对<code>l m b</code>不同参数的自动化测试脚本<code>/exp/experiment.py</code>由我的舍友宋曦轩编写，秉承不重复造轮子的原则我复用了他的代码；对实验结果的可视化分析代码<code>/exp/plot.py</code>由我个人编写完成。<br>另注：本报告主要长度来自对修改代码完整函数的展现以及可视化图片占据的空间，文字说明部分已尽可能通过结点&#x2F;数字列表等方式整理精简呈现。</p>
+</blockquote>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2023/01/06/coroutinelab/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2023/01/06/coroutinelab/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

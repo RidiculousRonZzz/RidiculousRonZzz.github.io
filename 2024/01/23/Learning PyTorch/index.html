@@ -1,0 +1,886 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo.png"/>
+	<link rel="shortcut icon" href="/img/logo.png">
+	
+			    <title>
+    Kevin's blog
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Kevin's blog" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.2"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">KEVIN</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li><li><a class="category-link" href="/categories/%E8%AE%BA%E6%96%87%E9%9A%8F%E7%AC%94/">论文随笔</a></li><li><a class="category-link" href="/categories/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/">课程报告</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/homepage/" title="学术主页">
+		                学术主页
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/Kevin-thu" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="twitter" href="https://twitter.com/sze68zkw" target="_blank" rel="noopener">
+                            <i class="icon fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://analyticsindiamag.com/wp-content/uploads/2020/02/Pytorch.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >PyTorch Learning</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="PyTorch-Learning"><a href="#PyTorch-Learning" class="headerlink" title="PyTorch Learning"></a>PyTorch Learning</h1><h1 id="Tensor"><a href="#Tensor" class="headerlink" title="Tensor"></a>Tensor</h1><ul>
+<li>属性<ul>
+<li><code>data</code>: 数值</li>
+<li><code>grad</code>: 梯度值</li>
+<li><code>grad_fn</code></li>
+<li><code>requires_grad</code></li>
+<li><code>is_leaf</code><ul>
+<li>叶子节点的概念主要是为了节省内存，所有节点都依赖于叶子节点（初始节点），在计算图中的一轮反向传播结束之后，非叶子节点的梯度会被释放（除非指定 retain_grad()）</li>
+<li>PyTorch 使用动态图机制，运算和搭建同时进行，可以先计算前面节点的值，再根据这些值搭建后面的计算图</li>
+</ul>
+</li>
+<li><code>dtype</code>: 数据类型，如 torch.FloatTensor，torch.cuda.FloatTensor<ul>
+<li>分为 3 大类：float (16-bit, 32-bit, 64-bit)、integer (unsigned-8-bit ,8-bit, 16-bit, 32-bit, 64-bit)、Boolean。模型参数和数据用的最多的类型是 float-32-bit。label 常用的类型是 integer-64-bit</li>
+</ul>
+</li>
+<li><code>device</code></li>
+</ul>
+</li>
+<li>创建<ul>
+<li>根据数值创建<ul>
+<li><code>torch.tensor(data, dtype, device, requires_grad)</code><ul>
+<li><code>data</code>: list&#x2F;numpy…</li>
+</ul>
+</li>
+<li><code>torch.from_numpy(np.ndarray)</code></li>
+<li><code>torch.zeros(*size, out=None, dtype=None, layout=torch.strided, device=None, requires_grad=False)</code><ul>
+<li><code>out</code>: 输出的张量，如果指定了 out，那么 <code>torch.zeros()</code> 返回的张量和 out 指向的是同一个地址</li>
+<li><code>layout</code>: 内存中布局形式，有 strided，sparse_coo 等。当是稀疏矩阵时，设置为 sparse_coo 可以减少内存占用</li>
+</ul>
+</li>
+<li><code>torch.zeros_like(input)</code></li>
+<li><code>torch.full(size, fill_value)</code> : 创建全为自定义数值（fill_value）的张量</li>
+<li><code>torch.arange(start=0, end, step=1)</code> : 创建 <strong>[start,end)</strong> 的一维张量</li>
+<li><code>torch.linspace(start, end, steps=100)</code> : 创建 <strong>[start, end]，元素个数为 steps</strong> 的均分一维张量</li>
+</ul>
+</li>
+<li>根据分布创建<ul>
+<li><p><code>torch.logspace(start, end, steps=100, base=10)</code> : 创建 <strong>[base^start, base^end]，元素个数为 steps</strong> 的对数均分一维张量</p>
+</li>
+<li><p><code>torch.eye(n, m=None)</code> : 创建行为 n，列为 m（默认与 n 相同）的单位对角矩阵</p>
+</li>
+<li><p><code>torch.normal(mean, std)</code> : 正态分布采样</p>
+<ol>
+<li><p>mean 为标量，std 为标量，<strong>这时需要设置 size</strong>，在同一正态分布中采样</p>
+</li>
+<li><p>mean 为标量，std 为张量</p>
+</li>
+<li><p>mean 为张量，std 为标量</p>
+<p> 采样的分布一个相同，另一个不同</p>
+</li>
+<li><p>mean 为张量，std 为张量</p>
+<p> 从不同分布中采样</p>
+</li>
+</ol>
+</li>
+<li><p><code>torch.randn(*size)</code>  <code>torch.randn_like(input)</code> : 生成<strong>标准</strong>正态分布</p>
+</li>
+<li><p><code>torch.rand(*size)</code> <code>torch.rand_like(input)</code> : 生成 <strong>[0,1)</strong> 上的<strong>均匀</strong>分布</p>
+</li>
+<li><p><code>torch.randint(low=0, high, size)</code> : 生成 <strong>[low, high)</strong> 上<strong>整数</strong>均匀分布</p>
+</li>
+<li><p><code>torch.randperm(n)</code> : 生成 <strong>0 到 n-1 的随机排列</strong>，常用于<strong>生成索引</strong></p>
+</li>
+<li><p><code>torch.bernoulli(input)</code> : 生成以 input (tensor) 为概率 (p) 的伯努利分布（0-1 离散分布）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>操作<ul>
+<li><p>广播机制</p>
+<ol>
+<li>从最后一个维度开始匹配</li>
+<li>在前面插入若干维度（进行 unsqueeze 操作）</li>
+<li>将维度的 size 从 1 扩张到与某个张量相同的维度</li>
+</ol>
+<p>  例如：</p>
+<ul>
+<li>Feature maps：[4, <strong>32, 14, 14</strong>]</li>
+<li>Bias：[<strong>32, 1, 1</strong>]（Tip：后面的两个1是手动unsqueeze插入的维度）-&gt; [1, 32, 1, 1] -&gt; [4, 32, 14, 14]</li>
+</ul>
+</li>
+<li><p>拼接</p>
+<ul>
+<li><code>torch.cat(tensors, dim=0)</code> : 将张量在 dim 维上拼接（除了 dim 维其他维度必须相同）</li>
+<li><code>torch.stack(tensors, dim=0)</code> : 将张量在<strong>新创建的</strong> dim 维上拼接（两个张量 shape 必须相同）</li>
+</ul>
+</li>
+<li><p>切分</p>
+<ul>
+<li><code>torch.chunk(input, chunks, dim=0)</code> : 将 input 向量在 dim 维上<strong>切分为 chunks 份</strong>（若不能整除，则最后一份张量小于其他张量）【按个数拆分】</li>
+<li><code>torch.split(tensor, split_size_or_sections, dim=0)</code> : split_size_or_sections 为 int 时，表示<strong>切分的每一份长度</strong>（若不能整除，则最后一份张量小于其他张量）；为 list 时，按照 list 元素作为每一个分量的长度切分（list 中元素之和必须等于切分维度的值）【按长度拆分】</li>
+</ul>
+</li>
+<li><p>索引</p>
+<ul>
+<li><p><code>torch.index_select(input, dim, index)</code> : 在 dim 维度上，按照 index 索引取出 input 中的数据拼接为张量返回</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建均匀分布</span></span><br><span class="line">t = torch.randint(<span class="number">0</span>, <span class="number">9</span>, size=(<span class="number">3</span>, <span class="number">3</span>))</span><br><span class="line"><span class="comment"># 注意 idx 的 dtype 不能指定为 torch.float</span></span><br><span class="line">idx = torch.tensor([<span class="number">0</span>, <span class="number">2</span>], dtype=torch.long)</span><br><span class="line"><span class="comment"># 取出第 0 行和第 2 行</span></span><br><span class="line">t_select = torch.index_select(t, dim=<span class="number">0</span>, index=idx)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;t:\n&#123;&#125;\nt_select:\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(t, t_select))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">t:</span></span><br><span class="line"><span class="string">tensor([[4, 5, 0],</span></span><br><span class="line"><span class="string">        [5, 7, 1],</span></span><br><span class="line"><span class="string">        [2, 5, 8]])</span></span><br><span class="line"><span class="string">t_select:</span></span><br><span class="line"><span class="string">tensor([[4, 5, 0],</span></span><br><span class="line"><span class="string">        [2, 5, 8]])</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>torch.mask_select(input, mask)</code> : 按照 mask 中的 True 进行索引拼接得到<strong>一维张量</strong>返回（mask 为与 input 同形的布尔类张量）</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">t = torch.randint(<span class="number">0</span>, <span class="number">9</span>, size=(<span class="number">3</span>, <span class="number">3</span>))</span><br><span class="line">mask = t.le(<span class="number">5</span>)  <span class="comment"># ge is mean greater than or equal/   gt: greater than  le  lt</span></span><br><span class="line"><span class="comment"># 取出大于 5 的数</span></span><br><span class="line">t_select = torch.masked_select(t, mask)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;t:\n&#123;&#125;\nmask:\n&#123;&#125;\nt_select:\n&#123;&#125; &quot;</span>.<span class="built_in">format</span>(t, mask, t_select))</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">t:</span></span><br><span class="line"><span class="string">tensor([[4, 5, 0],</span></span><br><span class="line"><span class="string">        [5, 7, 1],</span></span><br><span class="line"><span class="string">        [2, 5, 8]])</span></span><br><span class="line"><span class="string">mask:</span></span><br><span class="line"><span class="string">tensor([[ True,  True,  True],</span></span><br><span class="line"><span class="string">        [ True, False,  True],</span></span><br><span class="line"><span class="string">        [ True,  True, False]])</span></span><br><span class="line"><span class="string">t_select:</span></span><br><span class="line"><span class="string">tensor([4, 5, 0, 5, 1, 2, 5])</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>torch.ge(input, other)</code> <code>le</code> <code>gt</code> <code>lt</code> <code>nonzero</code>: 根据比较结果返回布尔型张量，<code>other</code> 可以是数值或张量</p>
+</li>
+</ul>
+</li>
+<li><p>变换</p>
+<ul>
+<li><p><code>torch.reshape(input, shape)</code></p>
+<p>  注意：当张量在内存中是连续的时，返回的张量和原来的张量<strong>共享数据内存</strong>，改变一个变量另一个也会改变！</p>
+</li>
+<li><p><code>torch.transpose(input, dim0, dim1)</code> : 交换张量的两个维度</p>
+</li>
+<li><p><code>torch.permute(input, dims)</code> : 置换张量维度（内存不变）</p>
+</li>
+<li><p><code>torch.squeeze(input, dim=None)</code> : 压缩长度为 1 的维度（dim 若为 None 则移除所有长度为 1 的维度；若指定维度，则当且仅当该维度长度为 1 时可以移除）</p>
+</li>
+<li><p><code>torch.unsqueeze(input, dim)</code> : 根据 dim 扩展维度，长度为 1</p>
+</li>
+</ul>
+</li>
+<li><p>扩张与缩减</p>
+<ul>
+<li><code>torch.expand()</code></li>
+<li>repeat</li>
+<li>narrow</li>
+</ul>
+</li>
+<li><p>近似与裁剪</p>
+<ul>
+<li><code>torch.floor</code> <code>torch.ceil</code> <code>torch.trunc</code> <code>torch.frac</code> <code>torch.round</code> : 向下取整、向上取整、取整数部分、取小数部分、四舍五入</li>
+<li><code>torch.clamp(input, min, max)</code> : 对张量中的元素，小于 min 的都设置为 min，大于 max 的都设置成 max</li>
+</ul>
+</li>
+<li><p>统计属性</p>
+<ul>
+<li><p><code>torch.norm(input, p, dim=None)</code> : 在 dim 维上对 input 张量<strong>求 p 范数</strong></p>
+</li>
+<li><p><code>torch.prod(input, dim=None)</code> : 累积</p>
+</li>
+<li><p><code>torch.argmax/argmin(input, dim=None)</code> : 最大值最小值索引（若不指定 dim，默认会将Tensor打平后取最大值索引和最小值索引）</p>
+</li>
+<li><p><code>torch.topk(input, k, dim=None, largest=True, sorted=True)</code> : 返回二元组 <code>values</code> <code>indices</code>，分别是 input 中前 k 大（ largest&#x3D;False 时为前 k 小）的值和索引（<strong>不指定 dim 时默认为最后一维</strong>，返回的两个张量与 input 相比除了 dim 维的值变成 k 外其他维不变）</p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; x = torch.<span class="title function_">arange</span>(<span class="number">1.</span>, <span class="number">6.</span>)</span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line"><span class="title function_">tensor</span>([ <span class="number">1.</span>,  <span class="number">2.</span>,  <span class="number">3.</span>,  <span class="number">4.</span>,  <span class="number">5.</span>])</span><br><span class="line">&gt;&gt;&gt; torch.<span class="title function_">topk</span>(x, <span class="number">3</span>)</span><br><span class="line">torch.<span class="property">return_types</span>.<span class="title function_">topk</span>(values=<span class="title function_">tensor</span>([<span class="number">5.</span>, <span class="number">4.</span>, <span class="number">3.</span>]), indices=<span class="title function_">tensor</span>([<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>]))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>torch.kthvalue(input, k, dim=None, keepdim=False)</code> : 返回 dim 维上<strong>第 k 小</strong>的元素及其索引</p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; x = torch.<span class="title function_">arange</span>(<span class="number">1.</span>, <span class="number">6.</span>)</span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line"><span class="title function_">tensor</span>([ <span class="number">1.</span>,  <span class="number">2.</span>,  <span class="number">3.</span>,  <span class="number">4.</span>,  <span class="number">5.</span>])</span><br><span class="line">&gt;&gt;&gt; torch.<span class="title function_">kthvalue</span>(x, <span class="number">4</span>)</span><br><span class="line">torch.<span class="property">return_types</span>.<span class="title function_">kthvalue</span>(values=<span class="title function_">tensor</span>(<span class="number">4.</span>), indices=<span class="title function_">tensor</span>(<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; x=torch.<span class="title function_">arange</span>(<span class="number">1.</span>,<span class="number">7.</span>).<span class="title function_">resize_</span>(<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line">&gt;&gt;&gt; x</span><br><span class="line"><span class="title function_">tensor</span>([[ <span class="number">1.</span>,  <span class="number">2.</span>,  <span class="number">3.</span>],</span><br><span class="line">        [ <span class="number">4.</span>,  <span class="number">5.</span>,  <span class="number">6.</span>]])</span><br><span class="line">&gt;&gt;&gt; torch.<span class="title function_">kthvalue</span>(x, <span class="number">2</span>, <span class="number">0</span>, <span class="title class_">True</span>)</span><br><span class="line">torch.<span class="property">return_types</span>.<span class="title function_">kthvalue</span>(values=<span class="title function_">tensor</span>([[<span class="number">4.</span>, <span class="number">5.</span>, <span class="number">6.</span>]]), indices=<span class="title function_">tensor</span>([[<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]]))</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>其他高阶操作</p>
+<ul>
+<li><p><code>torch.where(condition, input, other)</code>：实现条件选择 &#x2F; 分段函数</p>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/.png"></p>
+</li>
+<li><p>gather</p>
+</li>
+<li><p><code>torch.nn.functional.grid_sample(input, grid, mode=&#39;bilinear&#39;, padding_mode=&#39;zeros&#39;, align_corners=None)</code> ：用于 warping 操作，根据 grid 从 input 中取值填到 output 中</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://pytorch.org/docs/stable/generated/torch.nn.functional.grid_sample.html">torch.nn.functional.grid_sample — PyTorch 2.0 documentation</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自动求导机制<ul>
+<li><p><code>torch.autograd.backward(tensors, grad_tensors=None, retain_graph=False, create_graph=None)</code> : 反向求导</p>
+<ul>
+<li><p><code>tensors</code>: 用于求导的张量，如 loss</p>
+</li>
+<li><p><code>grad_tensors</code>: 当有多个 loss 混合需要计算梯度时，设置每个 loss 的权重</p>
+</li>
+<li><p><code>retain_graph</code>: 保存计算图</p>
+</li>
+<li><p><code>create_graph</code>: 创建导数计算图，用于高阶求导</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">x = torch.tensor([<span class="number">3.</span>], requires_grad=<span class="literal">True</span>)</span><br><span class="line">y = torch.<span class="built_in">pow</span>(x, <span class="number">2</span>)     <span class="comment"># y = x**2</span></span><br><span class="line"><span class="comment"># 如果需要求 2 阶导，需要设置 create_graph=True，让一阶导数 grad_1 也拥有计算图</span></span><br><span class="line">grad_1 = torch.autograd.grad(y, x, create_graph=<span class="literal">True</span>)   <span class="comment"># grad_1 = dy/dx = 2x = 2 * 3 = 6</span></span><br><span class="line"><span class="built_in">print</span>(grad_1)</span><br><span class="line"><span class="comment"># 这里求 2 阶导</span></span><br><span class="line">grad_2 = torch.autograd.grad(grad_1[<span class="number">0</span>], x)              <span class="comment"># grad_2 = d(dy/dx)/dx = d(2x)/dx = 2</span></span><br><span class="line"><span class="built_in">print</span>(grad_2)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">(tensor([6.], grad_fn=&lt;MulBackward0&gt;),)</span></span><br><span class="line"><span class="string">(tensor([2.]),)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><code>torch.aotograd.grad(outputs, inputs, grad_outputs=None, retain_graph=False, create_graph=None)</code> : <strong>outputs 对 inputs 求取梯度</strong>（返回一个 tuple，取出第 0 个元素为梯度计算结果）</p>
+</li>
+<li><p>注意</p>
+<ol>
+<li><p>PyTorch 采用动态图机制，默认每次反向传播之后都会释放计算图，因此默认情况下<strong>连续</strong>两次调用 backward 会报错</p>
+</li>
+<li><p>每次反向求导时，计算的梯度不会自动清零，若多次迭代计算而梯度没有清零，那么梯度会在前一次的基础上叠加；因此每次调用 backward 后，记得将梯度清零： <code>a.grad.zero_()</code> 或 <code>optimizer.zero_grad()</code></p>
+</li>
+<li><p>依赖于叶子节点的节点，requires_grad 属性默认为 True</p>
+</li>
+<li><p>叶子节点不可执行 inplace 操作</p>
+<blockquote>
+<p>以加法来说，inplace 操作有<code>a += x</code>，<code>a.add_(x)</code>，改变后的值和原来的值内存地址是同一个。非inplace 操作有<code>a = a + x</code>，<code>a.add(x)</code>，改变后的值和原来的值内存地址不是同一个。</p>
+</blockquote>
+<p> 如果在反向传播之前 inplace 改变了叶子节点的值，再执行 backward 会报错（这是因为在进行前向传播时，计算图中依赖于叶子节点的那些节点，会记录叶子节点的地址，在反向传播时就会利用叶子节点的地址所记录的值来计算梯度）</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><ul>
+<li><p><code>DataLoader</code> 和 <code>Dataset</code></p>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%201.png"></p>
+<ul>
+<li><p><code>torch.utils.Dataset</code> : 所有自定义数据集的<strong>基类</strong>，需要重写下列方法：</p>
+<ul>
+<li><code>__getitem(index)__</code> : 接收一个索引，返回索引对应的<strong>样本</strong>和<strong>标签</strong></li>
+<li><code>__len()__</code> : 返回所有样本的数量</li>
+</ul>
+<blockquote>
+<p>数据读取包括下列三方面：</p>
+<ul>
+<li>读取哪些数据：每个 Iteration 读取一个 Batchsize 大小的数据，每个 Iteration 应该读取哪些数据。</li>
+<li>从哪里读取数据：如何找到硬盘中的数据，应该在哪里设置文件路径参数</li>
+<li>如何读取数据：不同的文件需要使用不同的读取方法和库。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False, sampler=None, batch_sampler=None, num_workers=0, drop_last=False)</code> : 数据加载器</p>
+<ul>
+<li>sampler : 自定义从数据集中采样的策略，如果制定了采样策略， shuffle 则必须为 False（所有定义了 <code>__len__</code> 的 *********<code>Iterable</code>* 都可以作为 sampler）</li>
+<li>num_workers : 使用线程的数量，当为0时数据直接加载到主程序，默认为0</li>
+<li>drop_last:布尔类型，为 True 时将会把最后不足 batch_size 的数据丢掉，为F将会把剩余的数据作为最后一小组</li>
+</ul>
+<blockquote>
+<p>Epoch: 所有训练样本都已经输入到模型中，称为一个 Epoch</p>
+<p>Iteration: 一批样本输入到模型中，称为一个 Iteration</p>
+<p>Batch size: 批大小，决定一个 iteration 有多少样本，也决定了一个 Epoch 有多少个 Iteration</p>
+</blockquote>
+<ul>
+<li><p><code>DataLoader</code> 迭代器源码：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">__iter__</span>(<span class="params">self</span>):</span><br><span class="line">    <span class="keyword">if</span> self.num_workers == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> _SingleProcessDataLoaderIter(self)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> _MultiProcessingDataLoaderIter(self)</span><br></pre></td></tr></table></figure>
+<p>  对单进程，在 <code>_SingleProcessDataLoaderIter</code> 里只有一个方法<code>_next_data()</code>，如下：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_next_data</span>(<span class="params">self</span>):</span><br><span class="line">	 index = self._next_index()  <span class="comment"># may raise StopIteration</span></span><br><span class="line">	 data = self._dataset_fetcher.fetch(index)  <span class="comment"># may raise StopIteration</span></span><br><span class="line">	 <span class="keyword">if</span> self._pin_memory:</span><br><span class="line">		  data = _utils.pin_memory.pin_memory(data)</span><br><span class="line">	 <span class="keyword">return</span> data</span><br></pre></td></tr></table></figure>
+<p>  在该方法中，<code>self._next_index()</code> 是<strong>获取一个 batchsize 大小的 index 列表</strong>，代码如下：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">_next_index</span>(<span class="params">self</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">next</span>(self._sampler_iter)  <span class="comment"># may raise StopIteration</span></span><br></pre></td></tr></table></figure>
+<p>  其中调用的 <code>sampler</code> 类的 <code>__iter__()</code> 方法返回 <strong>batch_size 大小的随机 index 列表</strong></p>
+<p>  在第二行中调用了 <code>self._dataset_fetcher.fetch(index)</code> 获取数据。这里会调用 <code>_MapDatasetFetcher</code> 中的 <code>fetch()</code> 函数：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fetch</span>(<span class="params">self, possibly_batched_index</span>):</span><br><span class="line"> <span class="keyword">if</span> self.auto_collation:</span><br><span class="line">  data = [self.dataset[idx] <span class="keyword">for</span> idx <span class="keyword">in</span> possibly_batched_index]</span><br><span class="line"> <span class="keyword">else</span>:</span><br><span class="line">  data = self.dataset[possibly_batched_index]</span><br><span class="line"> <span class="keyword">return</span> self.collate_fn(data)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%202.png">
+  </p>
+</li>
+<li><p>数据处理与数据增强</p>
+<ul>
+<li><code>torchvision</code> 库简介<ul>
+<li><code>torchvision.transforms</code> : 包括常用图像预处理方法，<strong>可用在 Dataset 类初始化</strong>中，如：<ul>
+<li>数据中心化</li>
+<li>数据标准化</li>
+<li>缩放</li>
+<li>裁剪</li>
+<li>旋转</li>
+<li>翻转</li>
+<li>填充</li>
+<li>噪声添加</li>
+<li>灰度变换</li>
+<li>线性变换</li>
+<li>仿射变换</li>
+<li>亮度、饱和度以及对比度变换。</li>
+</ul>
+</li>
+<li><code>torchvision.datasets</code> : 包含常用数据集如 mnist、CIFAR-10、ImageNet 等</li>
+<li><code>torchvision.models</code> : 包含常用预训练模型，如 AlexNet、VGG、ResNet、GoogleNet 等</li>
+</ul>
+</li>
+<li><code>transforms</code> 中的图像处理方法<ul>
+<li>裁剪与填充<ul>
+<li><code>transforms.CenterCrop(size)</code> : 根据给定尺寸裁剪出图像中心（若裁剪的 size 比原图大，会填充值为 0 的像素）</li>
+<li><code>transforms.Pad(padding, fill=0, padding_mode=&#39;constant&#39;)</code> : 边界填充<ul>
+<li>padding : 设置填充大小<ul>
+<li>当为 a 时，上下左右均填充 a 个像素</li>
+<li>当为 (a, b) 时，左右填充 a 个像素，上下填充 b 个像素</li>
+<li>当为 (a, b, c, d) 时，左上右下分别填充 a，b，c，d</li>
+</ul>
+</li>
+<li>pad_if_need : 当图片小于设置的 size，是否填充</li>
+<li>padding_mode:<ul>
+<li>constant: 像素值由 fill 设定</li>
+<li>edge: 像素值由图像边缘像素设定</li>
+</ul>
+</li>
+<li>fill : 当 padding_mode 为 constant 时，设置填充的像素值（可以为三元 tuple，表示 RGB 三元组）</li>
+</ul>
+</li>
+<li><code>transforms.RandomCrop(size, padding=None, pad_if_need=False, fill=0, padding_mode=&#39;constant&#39;)</code> : 随机裁剪出尺寸为 size 的图片；如果 padding 不为 None，则先 padding 再裁剪</li>
+<li><code>transforms.RandomResizedCrop(size, scale=(0.08, 1.0), ratio=(0.75, 1.3333333333333333), interpolation=2)</code><ul>
+<li>size: 裁剪的图片尺寸</li>
+<li>scale: 随机缩放面积比例，默认随机选取 (0.08, 1) 之间的一个数（放大）</li>
+<li>ratio: 随机长宽比，默认随机选取 (3&#x2F;4, 4&#x2F;3) 之间的一个数。因为超过这个比例会有明显的失真</li>
+<li>interpolation: 当裁剪出来的图片小于 size 时，就要使用插值方法 resize<ul>
+<li>PIL.Image.NEAREST</li>
+<li>PIL.Image.BILINEAR</li>
+<li>PIL.Image.BICUBIC</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>翻转旋转与仿射变换<ul>
+<li><code>transforms.RandomHorizontalFlip(p)</code> &#x2F; <code>transforms.RandomVerticalFlip(p)</code> : 根据给定概率，在水平或垂直方向翻转图片</li>
+<li><code>transforms.RandomRotation(degrees, center=None, expand=False)</code> : 随机旋转<ul>
+<li>degrees : 旋转角度<ul>
+<li>当为 a 时，在 (-a, a) 之间随机选择旋转角度</li>
+<li>当为 (a, b) 时，在 (a, b) 之间随机选择旋转角度</li>
+</ul>
+</li>
+<li>center : 旋转点设置，是坐标，默认中心旋转,如设置左上角为 (0, 0)</li>
+<li>expand : 是否扩大矩形框，以保持原图信息。根据中心旋转点计算扩大后的图片。如果旋转点不是中心，即使设置 expand &#x3D; True，还是会有部分信息丢失</li>
+</ul>
+</li>
+<li><code>transforms.RandomAffine(degrees, translate=None, scale=None, shear=None, resample=False, fillcolor=0)</code> : 随机一般仿射变换，囊括五种基本操作——翻转、旋转、平移、缩放、错切<ul>
+<li>degree: 旋转角度设置</li>
+<li>translate: 平移区间设置，如 (a, b)，a 设置宽 (width)，b 设置高 (height)，图像在宽维度平移的区间为 image_width * [-a, +a]，高同理</li>
+<li>scale: 缩放比例，以面积为单位</li>
+<li>fillcolor: 填充颜色设置</li>
+<li>shear: 错切角度设置，有水平错切和垂直错切<ul>
+<li>若为 a，则仅在 x 轴错切，在 (-a, a) 之间随机选择错切角度</li>
+<li>若为 (a, b)，x 轴在 (-a, a) 之间随机选择错切角度，y 轴在 (-b, b) 之间随机选择错切角度</li>
+<li>若为 (a, b, c, d)，x 轴在 (a, b) 之间随机选择错切角度，y 轴在 (c, d) 之间随机选择错切角度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>颜色调整与随机遮挡<ul>
+<li><code>transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0)</code> : 调整亮度&#x2F;对比度&#x2F;饱和度&#x2F;色相<ul>
+<li>brightness、contrast、saturation 参数<ul>
+<li>当为 a 时，从 [max(0, 1-a), 1+a] 中随机选择</li>
+<li>当为 (a, b) 时，从 [a, b] 中选择</li>
+</ul>
+</li>
+<li>hue : 色相参数（介于 0 到 0.5）<ul>
+<li>当为 a 时，从 [-a, a] 中选择参数</li>
+<li>当为 (a, b) 时，从 [a, b] 中选择参数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>transforms.RandomGrayscale(p=0.1, num_output_channels=1)</code> : 根据指定概率将图片转为灰度图<ul>
+<li>num_output_channels : 输出的通道数。只能设置为 1 或者 3（如果在后面使用了 <code>transforms.Normalize</code>，则必须设为 3，因为 <code>transforms.Normalize</code> 只能接收 3 通道的输入）</li>
+</ul>
+</li>
+<li><code>transforms.RandomErasing(p=0.5, scale=(0.02, 0.33), ratio=(0.3, 3.3), value=0, inplace=False)</code> : 根据给定概率对图像随机遮挡<ul>
+<li>scale: 遮挡区域的面积。如(a, b)，则会随机选择 (a, b) 中的一个遮挡比例</li>
+<li>ratio: 遮挡区域长宽比。如(a, b)，则会随机选择 (a, b) 中的一个长宽比</li>
+<li>value: 设置遮挡区域的像素值。(R, G, B) 或者 Gray，或者任意字符串（此时会用高斯噪声遮挡）。若之前执行了<code>transforms.ToTensor()</code>，像素值归一化到了 0~1 之间，因此这里设置的 (R, G, B) 要除以 255</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊操作<ul>
+<li><code>transforms.Compose([list])</code> : 当需要多个 <code>transforms</code> 操作时，需要作为一个 <strong>list</strong> 包装在 <code>transforms.Compose</code> 中</li>
+<li><code>transforms.ToTensor()</code> : 把图片转换为张量，<strong>同时进行归一化操作</strong>，把每个通道 0<del>255 的值**归一化为 0</del>1 [C, H, W]**</li>
+<li><code>transforms.Normalize(mean, std, inplace=False)</code> : <strong>逐 channel</strong> 地对图像进行标准化 output &#x3D; ( input - mean ) &#x2F; std</li>
+<li><code>transforms.Lambda([lambda function])</code> : 自定义变换</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="模型构建与模型训练"><a href="#模型构建与模型训练" class="headerlink" title="模型构建与模型训练"></a>模型构建与模型训练</h1><p><img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%203.png"></p>
+<ul>
+<li><p><code>nn.Module</code> 类</p>
+<ul>
+<li>必须实现 <code>forward()</code> 函数</li>
+<li>两种 mode：<code>model.train()</code> &#x2F; <code>model.eval()</code><ul>
+<li>注意与 <code>requires_grad</code> 毫无关系，它仅仅是对在 train 和 eval 模式下表现不同的模块如 Dropout 和 BatchNorm 有用！</li>
+</ul>
+</li>
+<li>模块与参数管理<ul>
+<li><p>获取 <code>modules</code> (包括 <code>children</code>) <code>parameters</code> <code>buffers</code> 迭代器：不带 named_ 返回 <em>Tensor</em> 的迭代器，带 named_ 的返回 <em>Tuple[str, Tensor]</em> 的迭代器</p>
+<ul>
+<li><code>modules()</code> <code>named_modules(prefix=&#39;&#39;)</code> : 返回由浅入深遍历所有子模块的迭代器</li>
+<li><code>children()</code> <code>named_children(prefix=&#39;&#39;)</code> : 返回遍历所有一级子模块的迭代器</li>
+<li><code>parameters(recurse=True)</code> <code>named_parameters(prefix=&#39;&#39;, recurse=True)</code> : 返回所有参数（默认递归迭代所有子模块）</li>
+<li><code>buffers(recurse=True)</code> <code>named_buffers(prefix=&#39;&#39;, recurse=True)</code> : 返回模块的 buffers（模型状态参数，不用梯度下降更新）</li>
+</ul>
+</li>
+<li><p>根据名字获取 <code>submodule</code> <code>parameter</code> <code>buffer</code> : <code>get_***(target)</code></p>
+<p>  例如模块 A：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A(</span><br><span class="line">    (net_b): Module(</span><br><span class="line">        (net_c): Module(</span><br><span class="line">            (conv): Conv2d(<span class="number">16</span>, <span class="number">33</span>, kernel_size=(<span class="number">3</span>, <span class="number">3</span>), stride=(<span class="number">2</span>, <span class="number">2</span>))</span><br><span class="line">        )</span><br><span class="line">        (linear): Linear(in_features=<span class="number">100</span>, out_features=<span class="number">200</span>, bias=<span class="literal">True</span>)</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>  可以通过 <code>get_submodule(&quot;net_b.linear&quot;)</code> <code>get_submodule(&quot;net_b.net_c.conv&quot;)</code> 等获取相应子模块</p>
+</li>
+<li><p>注册 <code>module</code> <code>parameter</code> <code>buffer</code> : <code>register_***(name, [content])</code></p>
+</li>
+</ul>
+</li>
+<li>更改参数类型&#x2F;设备：<code>model.type(dst_type)</code> 或 <code>model.to(type/device)</code>，包括 <code>model.half()</code> <code>model.cuda()</code> 等</li>
+<li>载入模型参数：<code>model.load_state_dict(state_dict)</code></li>
+</ul>
+</li>
+<li><p>模型容器（同样继承自 <code>nn.Module</code>）</p>
+<ul>
+<li><code>nn.Sequetial</code>：顺序性，按照顺序包装多个网络层，常用于 block 构建</li>
+<li><code>nn.ModuleList</code>：迭代性，像 python 的 list 一样包装多个网络层，包含 <code>append()</code> <code>extend()</code> <code>insert()</code> 等方法，常用于大量重复网络构建，通过 for 循环实现重复构建</li>
+<li><code>nn.ModuleDict</code>：索引性，像 python 的 dict一样包装多个网络层，通过 (key, value) 的方式为每个网络层指定名称，常用于可选择的网络层****</li>
+</ul>
+</li>
+<li><p>模型组件</p>
+<ul>
+<li><p>卷积层</p>
+<ul>
+<li>二维卷积： <code>nn.Cov2d(self, in_channels, out_channels, kernel_size, stride=1, padding=1, dilation=1, groups=1, bias=True, padding_mode=&#39;zeros&#39;)</code><ul>
+<li>in_channels：输入通道数</li>
+<li>out_channels：输出通道数，等价于卷积核个数</li>
+<li>kernel_size：卷积核尺寸</li>
+<li>stride：步长</li>
+<li>padding：填充宽度，主要是为了调整输出的特征图大小，一般把 padding 设置合适的值后，保持输入和输出的图像尺寸不变。</li>
+<li>dilation：空洞卷积大小，默认为 1，这时是标准卷积，常用于图像分割任务中，主要是为了提升感受野</li>
+<li>groups：分组卷积设置，主要是为了模型的轻量化，如在 ShuffleNet、MobileNet、SqueezeNet 中用到</li>
+<li>bias：偏置</li>
+</ul>
+</li>
+</ul>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%204.png"></p>
+<ul>
+<li>转置卷积：<code>nn.ConvTranspose2d(self, in_channels, out_channels, kernel_size, stride=1, padding=0, output_padding=0, groups=1, bias=True, dilation=1, padding_mode=&#39;zeros&#39;)</code></li>
+</ul>
+</li>
+<li><p>池化层</p>
+<ul>
+<li><p>最大池化： <code>nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indices=False, ceil_mode=False)</code></p>
+<ul>
+<li>kernel_size : 池化核尺寸（无重叠，即通常 stride&#x3D;kernel_size）</li>
+<li>return_indices：为 True 时，返回最大池化所使用的像素的索引，这些记录的索引通常在反最大池化时使用，把小的特征图反池化到大的特征图时，每一个像素放在哪个位置</li>
+</ul>
+<p>  下图 (a) 表示反池化，(b) 表示上采样，(c) 表示反卷积：
+  </p>
+</li>
+<li><p>平均池化： <code>nn.AvgPool2d(...)</code></p>
+</li>
+<li><p>最大值反池化：<code>nn.MaxUnpool2d(kernel_size, stride=None, padding=0)</code></p>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%205.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>nn.init</code> 参数初始化</p>
+<ul>
+<li><p>目的：保持每一层输出的方差不能太大也不能太小</p>
+</li>
+<li><p>纯线性层：正态初始化，标准差 $\sigma(W)&#x3D;\sqrt{\cfrac{1}{n}}$</p>
+</li>
+<li><p>饱和激活函数（sigmoid&#x2F;tanh）：Xavier 初始化</p>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%206.png"></p>
+</li>
+<li><p>ReLU 激活函数：Kaiming 初始化</p>
+</li>
+</ul>
+</li>
+<li><p>损失函数（同样继承 <code>nn.Module</code>，因此也可视作一个网络层）</p>
+<ul>
+<li>基本概念<ul>
+<li>损失函数（Loss Function）：<strong>一个</strong>样本的模型输出与真实标签的差异</li>
+<li>代价函数（Cost Function）：整个样本集的模型输出与真实标签的差异，是所有样本损失函数的平均值</li>
+<li>目标函数（Objective Function）：代价函数加上正则项</li>
+</ul>
+</li>
+</ul>
+<p>  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/212691653">[PyTorch 学习笔记] 4.2 损失函数 - 知乎 (zhihu.com)</a>
+  </p>
+</li>
+<li><p><code>torch.optim</code> 优化器</p>
+<ul>
+<li>基本方法<ul>
+<li>初始化：给定待优化的模型参数、学习率</li>
+<li><code>optimizer.step()</code> : 进行一步迭代</li>
+<li><code>optimizer.zero_grad()</code> : 将所有待优化的张量梯度置零</li>
+<li><code>optimizer.state_dict()</code> <code>optimizer.load_state_dict(state_dict)</code> : 获取&#x2F;填入优化器的 state_dict</li>
+</ul>
+</li>
+<li>常用优化器<ul>
+<li><code>optim.SGD(params, lr, momentum=0, dampening=0, weight_decay=0)</code><ul>
+<li>params：管理的参数组</li>
+<li>lr：初始学习率</li>
+<li>momentum：动量系数</li>
+<li>weight_decay：L2 正则化系数</li>
+</ul>
+</li>
+<li><code>torch.optim.Adam(params, lr=0.001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0)</code></li>
+</ul>
+</li>
+<li><code>torch.optim.lr_schedule</code><ul>
+<li><code>StepLR(optimizer, step_size**=**30, gamma**=**0.1)</code> : 每经过 step_size 轮，将此前的学习率乘以 gamma</li>
+<li><code>MultiStepLR(optimizer, milestones**=**[30,80], gamma**=**0.5)</code> : 在每个 milestone 时，将此前学习率乘以 gamma</li>
+<li><code>ExponentialLR(optimizer, gamma**=**0.9)</code> : 每一轮都将学习率乘以 gamma 倍</li>
+<li><code>LinearLR(optimizer,start_factor**=**1,end_factor**=**0.1,total_iters**=**80)</code> : 给定起始 factor 和最终的 factor，LinearLR会在中间阶段做线性插值，比如学习率为 0.1，起始 factor 为 1，最终的 factor 为 0.1，那么第 0 次迭代，学习率将为 0.1，最终轮学习率为 0.01。下面设置的总轮数 total_iters 为 80，所以超过 80 时，学习率恒为 0.01</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>正则化</p>
+</li>
+<li><p>模型其他操作</p>
+</li>
+</ul>
+<h1 id="Config、Logging-amp-Visualization"><a href="#Config、Logging-amp-Visualization" class="headerlink" title="Config、Logging &amp; Visualization"></a>Config、Logging &amp; Visualization</h1><ul>
+<li><p>TensorBoard</p>
+</li>
+<li><p>动图绘制：<code>matplotlib.animation</code></p>
+<p>  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/442932579">用matplotlib的Animation画动图 - 知乎 (zhihu.com)</a></p>
+</li>
+</ul>
+<h1 id="PyTorch-Lightning"><a href="#PyTorch-Lightning" class="headerlink" title="PyTorch Lightning"></a>PyTorch Lightning</h1><h1 id="Huggingface"><a href="#Huggingface" class="headerlink" title="Huggingface"></a>Huggingface</h1><ul>
+<li>transformers</li>
+<li>diffusers</li>
+</ul>
+<h1 id="Gradio"><a href="#Gradio" class="headerlink" title="Gradio"></a><a target="_blank" rel="noopener" href="https://www.gradio.app/">Gradio</a></h1><ul>
+<li><p>简单交互场景 <code>gr.Interface</code>：<a target="_blank" rel="noopener" href="https://www.gradio.app/docs/interface">Gradio Interface Docs</a></p>
+<ul>
+<li><p><code>Interface</code> 类三大初始化参数：</p>
+<ul>
+<li><p><code>fn</code> : 包装的 python 函数</p>
+</li>
+<li><p><code>inputs</code> : 输入组件类型</p>
+</li>
+<li><p><code>outputs</code> : 输出组件类型</p>
+</li>
+<li><p>支持多输入多输出，输入列表中的每个组件按顺序对应于函数的一个参数，输出列表中的每个组件按顺序排列对应于函数返回的一个值</p>
+</li>
+<li><p>例子</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="comment">#该函数有3个输入参数和2个输出参数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name, is_morning, temperature</span>):</span><br><span class="line">    salutation = <span class="string">&quot;Good morning&quot;</span> <span class="keyword">if</span> is_morning <span class="keyword">else</span> <span class="string">&quot;Good evening&quot;</span></span><br><span class="line">    greeting = <span class="string">f&quot;<span class="subst">&#123;salutation&#125;</span> <span class="subst">&#123;name&#125;</span>. It is <span class="subst">&#123;temperature&#125;</span> degrees today&quot;</span></span><br><span class="line">    celsius = (temperature - <span class="number">32</span>) * <span class="number">5</span> / <span class="number">9</span></span><br><span class="line">    <span class="keyword">return</span> greeting, <span class="built_in">round</span>(celsius, <span class="number">2</span>)</span><br><span class="line">demo = gr.Interface(</span><br><span class="line">    fn=greet,</span><br><span class="line">    <span class="comment">#按照处理程序设置输入组件</span></span><br><span class="line">    inputs=[<span class="string">&quot;text&quot;</span>, <span class="string">&quot;checkbox&quot;</span>, gr.Slider(<span class="number">0</span>, <span class="number">100</span>)],</span><br><span class="line">    <span class="comment">#按照处理程序设置输出组件</span></span><br><span class="line">    outputs=[<span class="string">&quot;text&quot;</span>, <span class="string">&quot;number&quot;</span>],</span><br><span class="line">)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%207.png"></p>
+</li>
+</ul>
+</li>
+<li><p><code>Interface</code> 类其他参数</p>
+<ul>
+<li><code>live</code> : 动态界面接口，设置 <code>live=True</code> 时，不会有 <code>submit</code> 按钮，只要输入发生改变，结果马上发生改变</li>
+<li><code>title</code> : 网页标题</li>
+<li><code>description</code> : 左上角描述文字</li>
+<li><code>examples</code> : 参数示例列表</li>
+<li><code>article</code> : 左下角补充文字</li>
+</ul>
+</li>
+<li><p><code>Interface.launch()</code> 方法返回三个值：</p>
+<ul>
+<li><code>app</code> : 为 gradio 演示提供支持的 FastAPI 应用程序</li>
+<li><code>local_url</code> : 本地地址</li>
+<li><code>share_url</code> : 公共地址，当 <code>share=True</code> 时生成</li>
+</ul>
+</li>
+<li><p><code>Interface</code> 状态与交互</p>
+<ul>
+<li>全局变量：好处是在调用函数后仍然能够保存，例如通过全局变量从外部加载一个大型模型，并在函数内部使用它，以便每次函数调用都不需要重新加载模型</li>
+<li>会话状态：数据在一个页面会话中的多次提交中持久存在，常用于聊天机器人（<code>gr.Chatbot</code>）</li>
+<li>流模式：当输入是实时视频流或者音频流时，数据需要不停地发送到后端，这是可以设置 <code>gr.Image(streaming=True)</code> 模式处理数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>定制交互界面 <code>Blocks</code> : <a target="_blank" rel="noopener" href="https://www.gradio.app/docs/blocks">Gradio Blocks Docs</a></p>
+<ul>
+<li><p><code>Blocks</code> 是一种比 <code>Interface</code> 更灵活的交互方式，允许控制组件在页面上出现的位置，处理复杂的数据流（例如，输出可以作为其他函数的输入），并根据用户交互更新组件的属性可见性</p>
+</li>
+<li><p><code>Blocks</code> 需要with语句添加组件，如果不设置布局方式，那么组件将按照创建的顺序垂直出现在应用程序中</p>
+</li>
+<li><p>简单例子</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;!&quot;</span></span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    <span class="comment">#设置输入组件</span></span><br><span class="line">    name = gr.Textbox(label=<span class="string">&quot;Name&quot;</span>)</span><br><span class="line">    <span class="comment"># 设置输出组件</span></span><br><span class="line">    output = gr.Textbox(label=<span class="string">&quot;Output Box&quot;</span>)</span><br><span class="line">    <span class="comment">#设置按钮</span></span><br><span class="line">    greet_btn = gr.Button(<span class="string">&quot;Greet&quot;</span>)</span><br><span class="line">    <span class="comment">#设置按钮点击事件</span></span><br><span class="line">    greet_btn.click(fn=greet, inputs=name, outputs=output)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%208.png"></p>
+</li>
+<li><p>复杂多模块例子</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">flip_text</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> x[::-<span class="number">1</span>]</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">flip_image</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> np.fliplr(x)</span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    <span class="comment">#用markdown语法编辑输出一段话</span></span><br><span class="line">    gr.Markdown(<span class="string">&quot;Flip text or image files using this demo.&quot;</span>)</span><br><span class="line">    <span class="comment"># 设置tab选项卡</span></span><br><span class="line">    <span class="keyword">with</span> gr.Tab(<span class="string">&quot;Flip Text&quot;</span>):</span><br><span class="line">        <span class="comment">#Blocks特有组件，设置所有子组件按垂直排列</span></span><br><span class="line">        <span class="comment">#垂直排列是默认情况，不加也没关系</span></span><br><span class="line">        <span class="keyword">with</span> gr.Column():</span><br><span class="line">            text_input = gr.Textbox()</span><br><span class="line">            text_output = gr.Textbox()</span><br><span class="line">            text_button = gr.Button(<span class="string">&quot;Flip&quot;</span>)</span><br><span class="line">    <span class="keyword">with</span> gr.Tab(<span class="string">&quot;Flip Image&quot;</span>):</span><br><span class="line">        <span class="comment">#Blocks特有组件，设置所有子组件按水平排列</span></span><br><span class="line">        <span class="keyword">with</span> gr.Row():</span><br><span class="line">            image_input = gr.Image()</span><br><span class="line">            image_output = gr.Image()</span><br><span class="line">        image_button = gr.Button(<span class="string">&quot;Flip&quot;</span>)</span><br><span class="line">    <span class="comment">#设置折叠内容</span></span><br><span class="line">    <span class="keyword">with</span> gr.Accordion(<span class="string">&quot;Open for More!&quot;</span>):</span><br><span class="line">        gr.Markdown(<span class="string">&quot;Look at me...&quot;</span>)</span><br><span class="line">    text_button.click(flip_text, inputs=text_input, outputs=text_output)</span><br><span class="line">    image_button.click(flip_image, inputs=image_input, outputs=image_output)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%209.png"></p>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%2010.png"></p>
+</li>
+<li><p><code>Blocks</code> 复杂控制</p>
+<ul>
+<li><p>多个数据流：同一个 <code>gr</code> 组件有可能既可以做输入又可以做输出，对于多个数据流，可以通过多个控制组件进行控制，例如：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">increase</span>(<span class="params">num</span>):</span><br><span class="line">    <span class="keyword">return</span> num + <span class="number">1</span></span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    a = gr.Number(label=<span class="string">&quot;a&quot;</span>)</span><br><span class="line">    b = gr.Number(label=<span class="string">&quot;b&quot;</span>)</span><br><span class="line">    <span class="comment"># 要想b&gt;a，则使得b = a+1</span></span><br><span class="line">    atob = gr.Button(<span class="string">&quot;b &gt; a&quot;</span>)</span><br><span class="line">    atob.click(increase, a, b)</span><br><span class="line">    <span class="comment"># 要想a&gt;b，则使得a = b+1</span></span><br><span class="line">    btoa = gr.Button(<span class="string">&quot;a &gt; b&quot;</span>)</span><br><span class="line">    btoa.click(increase, b, a)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%2011.png"></p>
+</li>
+<li><p>多个输出值：可以通过列表或字典形式处理</p>
+</li>
+<li><p>组件配置修改：事件监听器函数的返回值通常是相应的输出组件的<strong>更新值</strong>。有时我们也想<strong>更新组件的配置</strong>，比如说可见性；在这种情况下，我们可以通过返回 <code>gr.update</code> 函数更新组件的配置，例如：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">change_textbox</span>(<span class="params">choice</span>):</span><br><span class="line">    <span class="comment">#根据不同输入对输出控件进行更新</span></span><br><span class="line">    <span class="keyword">if</span> choice == <span class="string">&quot;short&quot;</span>:</span><br><span class="line">        <span class="keyword">return</span> gr.update(lines=<span class="number">2</span>, visible=<span class="literal">True</span>, value=<span class="string">&quot;Short story: &quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> choice == <span class="string">&quot;long&quot;</span>:</span><br><span class="line">        <span class="keyword">return</span> gr.update(lines=<span class="number">8</span>, visible=<span class="literal">True</span>, value=<span class="string">&quot;Long story...&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> gr.update(visible=<span class="literal">False</span>)</span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    radio = gr.Radio(</span><br><span class="line">        [<span class="string">&quot;short&quot;</span>, <span class="string">&quot;long&quot;</span>, <span class="string">&quot;none&quot;</span>], label=<span class="string">&quot;Essay Length to Write?&quot;</span></span><br><span class="line">    )</span><br><span class="line">    text = gr.Textbox(lines=<span class="number">2</span>, interactive=<span class="literal">True</span>)</span><br><span class="line">    radio.change(fn=change_textbox, inputs=radio, outputs=text)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%2012.png"></p>
+</li>
+</ul>
+</li>
+<li><p><code>Blocks</code> 布局</p>
+<ul>
+<li>默认情况下组件垂直排列</li>
+<li><code>gr.Row()</code> 会将组件水平排列，保持同等高度</li>
+<li><code>scale</code> 可设置与相邻列相比的相对宽度；例如，如果列A的比例为2，列B的比例为1，则A的宽度将是B的两倍</li>
+<li><code>min_width</code> 可设置最小宽度，防止列太窄</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>组件模块：<a target="_blank" rel="noopener" href="https://www.gradio.app/docs/components">Gradio Component Docs</a></p>
+<ul>
+<li><p>IO 组件： <code>&quot;text&quot;</code>，<code>&quot;image&quot;</code>，<code>gr.Textbox</code>，<code>gr.Image</code> , <code>gr.DataFrame</code>，<code>gr.Dropdown</code>，<code>gr.Number</code>，<code>gr.Markdown</code>，<code>gr.Files</code> 等</p>
+<ul>
+<li>例如：当使用 <code>Image</code> 作为组件输入时，默认情况下，函数将收到一个<strong>维度为（w,h,3）的 numpy 数组</strong>，按照 RGB 通道排列；也可以设置输入类型 <code>type</code>，比如 <code>type=filepath</code> 设置<strong>传入处理图像的路径</strong></li>
+</ul>
+</li>
+<li><p>控制组件：<code>gr.Button</code> 等</p>
+</li>
+<li><p>布局组件：<code>gr.Tab</code>，<code>gr.Row</code>，<code>gr.Column</code> 等</p>
+</li>
+<li><p>简单例子</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;!&quot;</span></span><br><span class="line">demo = gr.Interface(</span><br><span class="line">    fn=greet,</span><br><span class="line">    <span class="comment"># 自定义输入框</span></span><br><span class="line">    <span class="comment"># 具体设置方法查看官方文档</span></span><br><span class="line">    inputs=gr.Textbox(lines=<span class="number">3</span>, placeholder=<span class="string">&quot;Name Here...&quot;</span>,label=<span class="string">&quot;my input&quot;</span>),</span><br><span class="line">    outputs=<span class="string">&quot;text&quot;</span>,</span><br><span class="line">)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+<p>  <img src="/Learning%20PyTorch%20d8e7d156b05745b895c1c2e3f4b7a752/%2013.png"></p>
+</li>
+<li><p>组件设置</p>
+<ul>
+<li><p>样式设置：组件 <code>.style</code> 可以设置该组件样式，例如：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = gr.Image(<span class="string">&quot;lion.jpg&quot;</span>).style(height=<span class="string">&#x27;24&#x27;</span>, rounded=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>交互属性设置：输入组件默认都是可编辑的，输出组件默认都是不可编辑的；可以通过 <code>interactive</code> 参数更改输入输出组件交互属性</p>
+</li>
+<li><p>事件设置：我们可以为不同的组件设置不同事件，如为输入组件添加 <code>change</code> 事件，为控制按钮组件加 <code>click</code> 事件等；事件触发时会执行所设定的函数</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;!&quot;</span></span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    name = gr.Textbox(label=<span class="string">&quot;Name&quot;</span>)</span><br><span class="line">    <span class="comment"># 不可交互</span></span><br><span class="line">    <span class="comment"># output = gr.Textbox(label=&quot;Output Box&quot;)</span></span><br><span class="line">    <span class="comment"># 可交互</span></span><br><span class="line">    output = gr.Textbox(label=<span class="string">&quot;Output&quot;</span>, interactive=<span class="literal">True</span>)</span><br><span class="line">    greet_btn = gr.Button(<span class="string">&quot;Greet&quot;</span>)</span><br><span class="line">    greet_btn.click(fn=greet, inputs=name, outputs=output)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">welcome</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="string">f&quot;Welcome to Gradio, <span class="subst">&#123;name&#125;</span>!&quot;</span></span><br><span class="line"><span class="keyword">with</span> gr.Blocks() <span class="keyword">as</span> demo:</span><br><span class="line">    gr.Markdown(</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    # Hello World!</span></span><br><span class="line"><span class="string">    Start typing below to see the output.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span>)</span><br><span class="line">    inp = gr.Textbox(placeholder=<span class="string">&quot;What is your name?&quot;</span>)</span><br><span class="line">    out = gr.Textbox()</span><br><span class="line">    <span class="comment">#设置change事件</span></span><br><span class="line">    inp.change(fn = welcome, inputs = inp, outputs = out)</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>其他辅助功能</p>
+<ul>
+<li><p>队列 <code>Interface(...).queue()</code>：如果函数推理时间较长，比如目标检测；或者应用程序处理流量过大，则需要使用queue方法进行排队；queue方法使用websockets，可以防止网络超时</p>
+</li>
+<li><p>生成器：在某些情况下，我们可能想显示一连串的输出，而不是单一的输出。例如，可能有一个图像生成模型，如果你显示在每个步骤中生成的图像，从而得到最终的图像，这时可以向Gradio提供一个生成器函数，而不是一个常规函数，例如：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gradio <span class="keyword">as</span> gr</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="comment">#生成steps张图片，每隔1秒钟返回</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fake_diffusion</span>(<span class="params">steps</span>):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(steps):</span><br><span class="line">        time.sleep(<span class="number">1</span>)</span><br><span class="line">        image = np.random.randint(<span class="number">255</span>, size=(<span class="number">300</span>, <span class="number">600</span>, <span class="number">3</span>))</span><br><span class="line">        <span class="keyword">yield</span> image</span><br><span class="line">demo = gr.Interface(fake_diffusion,</span><br><span class="line">                    <span class="comment">#设置滑窗，最小值为1，最大值为10，初始值为3，每次改动增减1位</span></span><br><span class="line">                    inputs=gr.Slider(<span class="number">1</span>, <span class="number">10</span>, value=<span class="number">3</span>, step=<span class="number">1</span>),</span><br><span class="line">                    outputs=<span class="string">&quot;image&quot;</span>)</span><br><span class="line"><span class="comment">#生成器必须要queue函数</span></span><br><span class="line">demo.queue()</span><br><span class="line">demo.launch()</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2024/01/23/Learning%20PyTorch/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/01/23/Learning%20PyTorch/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
