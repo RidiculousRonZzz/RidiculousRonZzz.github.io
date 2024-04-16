@@ -9,37 +9,40 @@ redirect_from:
 ---
 
 Hi! I am a junior undergraduate student at Tsinghua University, majoring in Computer Science and Technology.
-Currently, I am fortunate to be advised by Prof. [Xingang Pan](https://xingangpan.github.io/) at [MMLab, NTU](https://www.mmlab-ntu.com/index.html).
-I was also honored to be advised by Prof. [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/) at [Knowledge Engineering Group (KEG), THU](http://keg.cs.tsinghua.edu.cn/).
+Currently, I am fortunate to be advised by Prof. [Chun Yu](https://xingangpan.github.io/) at [PI, Thu](https://www.mmlab-ntu.com/index.html).
 
-My research interests lie in the area of computer vision, deep learning and computer graphics. I am particularly interested in the following topics:
+My research interests lie in the area of human computer interaction, deep learning and computer graphics. I am particularly interested in the following topics:
 * Generative Models, e.g. Diffusion Models
-* Neural Scene Representations and Rendering
-* Image, Video and 3D Generation and Manipulation
-<!-- * AI-Human Collaborative Content Creation -->
+* AI-Human Collaborative Content Creation
 
-Contact: zkw21@mails.tsinghua.edu.cn
+Contact: fxz21@mails.tsinghua.edu.cn
 
-[Download CV](https://kevin-thu.github.io/homepage/files/CV.pdf) / [Blog](https://kevin-thu.github.io/) / [Twitter](https://twitter.com/sze68zkw)
+[Download CV](https://.github.io/homepage/files/CV.pdf) / [Blog](https://ridiculousronzzz.github.io/)
 
 
 Publications / Preprints
 ======
-* **Kaiwen Zhang**, Yifan Zhou, Xudong Xu, Xingang Pan✉, Bo Dai. **DiffMorpher: Unleashing the Capability of Diffusion Models for Image Morphing** *CVPR 2024* ([Project](https://kevin-thu.github.io/DiffMorpher_page/) / [Paper](https://arxiv.org/pdf/2312.07409.pdf) / [ArXiv](https://arxiv.org/pdf/2312.07409.pdf) / [Code](https://github.com/Kevin-thu/DiffMorpher))
+<!-- * ****, Yifan Zhou, Xudong Xu, Xingang Pan✉, Bo Dai. **DiffMorpher: Unleashing the Capability of Diffusion Models for Image Morphing** *CVPR 2024* ([Project](https://kevin-thu.github.io/DiffMorpher_page/) / [Paper](https://arxiv.org/pdf/2312.07409.pdf) / [ArXiv](https://arxiv.org/pdf/2312.07409.pdf) / [Code](https://github.com/Kevin-thu/DiffMorpher)) -->
+* **Xianzhe Fan**, Zihan Wu, Chun Yu, Fenggui Rao, Weinan Shi, and Teng Tu. 2024. **ContextCam: Bridging Context Awareness with Creative Human-AI Image Co-Creation.** In Proceedings of the CHI Conference on Human Factors in Computing Systems *(CHI ’24)*, May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 17 pages. [Paper](https://doi.org/10.1145/3613904.3642129)
 
 Experience
 ======
-* Research Intern, Intelligent Digital Creation Group, Shanghai AI Lab, 2023.07 - 2024.01
-* Research Assistant, Knowledge Engineering Group (KEG), Tsinghua University, 2022.09 - 2023.06
-* Undergraduate student (GPA: 3.95/4.0, Top 5%), Department of Computer Science and Technology, Tsinghua University, 2021.09 - 2025.07 (Expected)
+* Research Intern, PCG Group, PI Lab, 2022.03 - Present
+* Undergraduate in Qian Xuesen Class of Mechanics, Xingjian College, Tsinghua University, September 2021 - July 2025
+  * GPA: 3.82/4.00
+  * Major Ranking: 9/28, top 30% (eligible for recommendation for postgraduate studies)
 
 Honors and Awards
 ======
-* **National Scholarship** (Highest Honor for undergraduates in China, ∼Top 0.2%), 2023
-* Second Prize (3 / 109), The Jittor AI Challenge (Image Generation Track), 2023
-* Tsinghua University Comprehensive Excellence Scholarship (Top 5%), 2022
-* Meritorious Winner (Top 10%), American Mathematical Contest in Modeling, 2022
-
+* “Tsinghua Scholar Talent Program” Scholarship, 2022, 2023
+* “Excellence in Science and Technology Innovation” University-level Scholarship, 2022, 2023
+* Technical Leader of the “AI Research Project on Image Generation” under the Future Scientists and Information
+* Technologists Interest Group, 2023
+* Selected for the Second Phase of the Xingjian College “HeYe Plan”, 2023
+* Second Prize in the Beijing Division of the National College Students’ Mathematical Modeling Contest 2022 (as team leader), 2022
+* “WuXing Cup” Third Prize and Academic New Star Award at Xingjian College, 2022
+* First Prize in the 38th National College Students’ Physics Competition, 2021
+* First Prize at the Provincial Level in the 37th National High School Students’ Physics Competition, 2019
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
