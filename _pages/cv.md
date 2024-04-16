@@ -11,54 +11,56 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Mechanics, Qian Xuesen Class, Xingjian College, Tsinghua University, 2021-2025
+  * GPA: 3.82/4.00
+  * Major Ranking: 9/28, top 30% (eligible for recommendation for postgraduate studies)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* October 2023 - Present: Research Assistant
+  * Trustworthy RAG Intelligent Data Management System
+  * Duties included: Table data parsing, knowledge extraction, literature research, and research topic determination.
+  * Modeling user psychology and adaptive content display based on user's trust level.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* October 2023 - December 2023: Course Project Assistant
+  * Face Recognition System in Unconstrained Environments
+  * Designed and implemented a face recognition system with 92% accuracy.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* July 2023 - September 2023: Summer Research Assistant
+  * GIX International Summer Research Program, Advisor: Chun Yu
+  * Research on human-AI co-creation of images, resulting in a first-author paper accepted by CHI'24.
+
+* March 2023 - September 2023: SRT Project Assistant
+  * Application of API Chain in AI Painting Interactive Agents
+  * Developed AI painting application enhancing user interaction and experience.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Technical Skills: Audio Signal Processing, Computer Vision, Machine Learning, Deep Learning, User Interface Design, User Research, Data Analysis, Visualization
+* Programming Languages: Python, C/C++, Java, Go
+* Professional Software: VScode, Android Studio, Multisim, SolidWorks, AutoCAD
+* Drawing & Typesetting: Adobe Audition, Adobe Photoshop, LATEX
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>
+  <li>Xianzhe Fan, et al. "ContextCam: Bridging Context Awareness with Creative Human-AI Image Co-Creation." In Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI'24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 17 pages.</li>
+</ul>
+
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+<ul>
+  <li>May 2024: Presentation at CHI'24 on "ContextCam: Bridging Context Awareness with Creative Human-AI Image Co-Creation."</li>
+</ul>
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>
+  <li>Facilitator for project discussions and peer learning sessions in various courses and research projects.</li>
+</ul>
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Technical Leader of the “AI Research Project on Image Generation” under the Future Scientists and Information Technologists Interest Group, 2023
+* Tsinghua Scholar Talent Program Scholarship recipient, 2022, 2023
+* Excellence in Science and Technology Innovation Scholarship, University-level, 2022, 2023
