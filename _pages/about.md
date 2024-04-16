@@ -1,13 +1,46 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
+excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Hi! I am a junior undergraduate student at Tsinghua University, majoring in Computer Science and Technology.
+Currently, I am fortunate to be advised by Prof. [Xingang Pan](https://xingangpan.github.io/) at [MMLab, NTU](https://www.mmlab-ntu.com/index.html).
+I was also honored to be advised by Prof. [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/) at [Knowledge Engineering Group (KEG), THU](http://keg.cs.tsinghua.edu.cn/).
+
+My research interests lie in the area of computer vision, deep learning and computer graphics. I am particularly interested in the following topics:
+* Generative Models, e.g. Diffusion Models
+* Neural Scene Representations and Rendering
+* Image, Video and 3D Generation and Manipulation
+<!-- * AI-Human Collaborative Content Creation -->
+
+Contact: zkw21@mails.tsinghua.edu.cn
+
+[Download CV](https://kevin-thu.github.io/homepage/files/CV.pdf) / [Blog](https://kevin-thu.github.io/) / [Twitter](https://twitter.com/sze68zkw)
+
+
+Publications / Preprints
+======
+* **Kaiwen Zhang**, Yifan Zhou, Xudong Xu, Xingang Pan✉, Bo Dai. **DiffMorpher: Unleashing the Capability of Diffusion Models for Image Morphing** *CVPR 2024* ([Project](https://kevin-thu.github.io/DiffMorpher_page/) / [Paper](https://arxiv.org/pdf/2312.07409.pdf) / [ArXiv](https://arxiv.org/pdf/2312.07409.pdf) / [Code](https://github.com/Kevin-thu/DiffMorpher))
+
+Experience
+======
+* Research Intern, Intelligent Digital Creation Group, Shanghai AI Lab, 2023.07 - 2024.01
+* Research Assistant, Knowledge Engineering Group (KEG), Tsinghua University, 2022.09 - 2023.06
+* Undergraduate student (GPA: 3.95/4.0, Top 5%), Department of Computer Science and Technology, Tsinghua University, 2021.09 - 2025.07 (Expected)
+
+Honors and Awards
+======
+* **National Scholarship** (Highest Honor for undergraduates in China, ∼Top 0.2%), 2023
+* Second Prize (3 / 109), The Jittor AI Challenge (Image Generation Track), 2023
+* Tsinghua University Comprehensive Excellence Scholarship (Top 5%), 2022
+* Meritorious Winner (Top 10%), American Mathematical Contest in Modeling, 2022
+
+<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
 ======
@@ -18,11 +51,11 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 Getting started
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+2. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
+3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+6. Check status by going to the repository settings, in the "GitHub pages" section
 
 Site-wide configuration
 ------
@@ -46,4 +79,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
