@@ -13,7 +13,7 @@ Education
 ======
 * Undergraduate in Qian Xuesen Class of Mechanics, Xingjian College, Tsinghua University, September 2021 - July 2025
   * GPA: 3.82/4.00
-  * Major Ranking: 9/28, top 30% (eligible for recommendation for postgraduate studies)
+  * Major ranking 9/28, top 30% in the department (eligible for recommendation for postgraduate studies)
 
 Project experience
 ======
