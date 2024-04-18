@@ -13,6 +13,7 @@ Currently, I am fortunate to be advised by Prof. [Chun Yu](https://pi.cs.tsinghu
 
 My research interests lie in the area of Human-Computer Interaction (HCI). I am particularly interested in the following topics:
 * Human AI Collaboration
+* Creativity Support Tools
 * Trust and Explainable AI
 * Intelligent Speech Interaction
 * Generative Models, e.g. Diffusion Models
