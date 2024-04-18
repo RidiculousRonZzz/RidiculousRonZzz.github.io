@@ -19,7 +19,7 @@ My research interests lie in the area of Human-Computer Interaction (HCI). I am 
 
 Contact: fxz21@mails.tsinghua.edu.cn
 
-[Download CV](https://ridiculousronzzz.github.io/files/CV.pdf) / [Blog](https://ridiculousronzzz.github.io/)
+[Download CV](https://ridiculousronzzz.github.io/files/CV.pdf)
 
 
 Publications / Preprints
@@ -33,6 +33,10 @@ Experience
 * Undergraduate in Qian Xuesen Class of Mechanics, Xingjian College, Tsinghua University, September 2021 - July 2025
   * GPA: 3.82/4.00
   * Major Ranking: 9/28, top 30% (eligible for recommendation for postgraduate studies)
+
+English Level
+======
+* TOEFL 106
 
 Honors and Awards
 ======
