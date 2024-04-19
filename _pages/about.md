@@ -26,7 +26,7 @@ Contact: fxz21@mails.tsinghua.edu.cn
 Publications / Preprints
 ======
 * **Xianzhe Fan**, Zihan Wu, Chun Yu, Fenggui Rao, Weinan Shi, and Teng Tu. 2024. **ContextCam: Bridging Context Awareness with Creative Human-AI Image Co-Creation.** In Proceedings of the CHI Conference on Human Factors in Computing Systems *(CHI ’24)*, May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 17 pages. [Paper](https://ridiculousronzzz.github.io/files/chi24-240.pdf)
-<!-- (https://doi.org/10.1145/3613904.3642129) -->
+[Video Preview](https://ridiculousronzzz.github.io/files/chi24a-sub2702-cam-i21.mp4)
 
 Experience
 ======
