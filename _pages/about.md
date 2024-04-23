@@ -30,7 +30,7 @@ Publications / Preprints
 
 Experience
 ======
-* Research Intern, [Pervasive Interaction Lab, Department of Computer Science and Technology, Tsinghua University](https://pi.cs.tsinghua.edu.cn/), 2022.03 - Present
+* Research Intern, [Pervasive Interaction Lab, Department of Computer Science and Technology, Tsinghua University](https://pi.cs.tsinghua.edu.cn/), March 2022 - Present
 * Undergraduate in Qian Xuesen Class of Mechanics, Xingjian College, Tsinghua University, September 2021 - July 2025
   * GPA: 3.82/4.00
   <!-- * Major Ranking: 9/28, top 30% (eligible for recommendation for postgraduate studies) -->
