@@ -20,6 +20,8 @@ I am particularly interested in the following topics:
 * Generative Models, e.g. Diffusion Models
 * Intelligent Speech Interaction
 
+**I am seeking PhD positions in the HCI/CS field starting in fall 2025!**
+
 Contact: fxz21@mails.tsinghua.edu.cn
 
 [Download CV](https://ridiculousronzzz.github.io/files/CV.pdf)
