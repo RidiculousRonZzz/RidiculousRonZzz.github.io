@@ -12,7 +12,7 @@ Hi! I am a junior undergraduate of the Tsien Engineering Excellence Program (TEE
 Currently, I am fortunate to be advised by Professor [Chun Yu](https://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/) and Dr. Weinan Shi at [Pervasive Interaction Lab, Department of Computer Science and Technology, Tsinghua University](https://pi.cs.tsinghua.edu.cn/).
 
 My research interests lie in the area of Human-Computer Interaction (HCI). 
-**I develop systems that reshape how users collaborate with AIGC and evaluate it.**
+**I develop systems that reshape how users collaborate with AIGC and evaluate it, and uncover interesting insights.**
 I am particularly interested in the following topics:
 * Human AI Collaboration
 * Creativity Support Systems
